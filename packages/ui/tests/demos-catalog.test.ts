@@ -1,5 +1,5 @@
 import { describe, expect, it } from "bun:test";
-import { existsSync, readdirSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join, relative, resolve } from "node:path";
 import { CATALOG } from "../../../site/src/demos/catalog.ts";
 import {
@@ -54,6 +54,13 @@ describe("demo catalog", () => {
 		}
 	});
 
+	it("no demo imports a site-internal path: references are handed to other projects", () => {
+		const bad = CATALOG.filter((d) =>
+			/from\s+["']~\//.test(readFileSync(join(DEMOS, `${d.path}.svelte`), "utf8"))
+		);
+		expect(bad.map((d) => `#${d.id} ${d.path}`)).toEqual([]);
+	});
+
 	it("chart demos declare the echarts peer", () => {
 		const chart = demos.find((d) => d.imports.some((i) => i.from.endsWith("/charts")));
 		expect(chart?.needs).toContain("echarts");
@@ -105,5 +112,83 @@ describe("demo meta sidecars", () => {
 		expect(files[`en/e/${d.id}.txt`]).toContain(`When to use: ${d.use}`);
 		expect(files[`en/p/${d.id}.txt`]).toContain(`Spec:\n- ${d.spec[0]}`);
 		expect(files[`en/p/${d.id}.txt`]).not.toContain("..");
+	});
+});
+
+describe("motion sidecar fields", () => {
+	const source = "animation: rise 420ms cubic-bezier(0.2, 0, 0, 1) 80ms both; opacity; transform";
+	const ok = {
+		summary: "A card that fades and rises into place.",
+		use: "Entrance of a card, a toast or a list row.",
+		spec: ["`opacity`"],
+		tags: ["motion", "fade"],
+		shape: "square",
+		names: ["Fade rise", "Fade up", "Surgir"],
+		motion: [
+			{
+				property: "transform",
+				duration: "420ms",
+				easing: "cubic-bezier(0.2, 0, 0, 1)",
+				delay: "80ms",
+			},
+		],
+	};
+
+	it("checkMeta accepts names and motion whose values are in the source", () => {
+		expect(checkMeta(ok, source)).toEqual([]);
+	});
+
+	it("checkMeta rejects bad names and malformed motion entries", () => {
+		expect(checkMeta({ ...ok, names: [] }, source)).toContain(
+			"names: non-empty strings, at least one"
+		);
+		expect(checkMeta({ ...ok, names: ["Fade", ""] }, source)).toContain(
+			"names: non-empty strings, at least one"
+		);
+		expect(checkMeta({ ...ok, motion: [] }, source)).toContain(
+			"motion: at least one entry when present"
+		);
+		expect(checkMeta({ ...ok, motion: [{ property: "opacity" }] }, source)).toContain(
+			"motion[0].duration: non-empty string required"
+		);
+		expect(checkMeta({ ...ok, motion: [{ ...ok.motion[0], extra: "1s" }] }, source)).toContain(
+			'motion[0]: unknown key "extra"'
+		);
+	});
+
+	it("checkMeta rejects motion values that are not verbatim in the demo source", () => {
+		expect(checkMeta({ ...ok, motion: [{ ...ok.motion[0], duration: "999ms" }] }, source)).toEqual([
+			"motion[0].duration: `999ms` is not in the demo source",
+		]);
+		expect(checkMeta({ ...ok, motion: [{ ...ok.motion[0], stagger: "40ms" }] }, source)).toEqual([
+			"motion[0].stagger: `40ms` is not in the demo source",
+		]);
+	});
+
+	it("emits Names and Motion in e/ and p/, and the exact-values line only with motion", () => {
+		const manifest = buildManifest();
+		const { demos, files } = buildDemos(manifest, CATALOG);
+		const plain = demos[0];
+		expect(files[`en/e/${plain.id}.txt`]).not.toContain("Motion:");
+		expect(files[`en/p/${plain.id}.txt`]).not.toContain("Reproduce the motion values exactly");
+		const m = demos.find((d) => d.motion?.length);
+		expect(m).toBeDefined();
+		if (!m) return;
+		const first = m.motion?.[0];
+		expect(files[`en/e/${m.id}.txt`]).toContain(`Names: ${m.names?.join(" | ")}`);
+		expect(files[`en/e/${m.id}.txt`]).toContain(
+			`Motion:\n- ${first?.property}: ${first?.duration}`
+		);
+		expect(files[`en/p/${m.id}.txt`]).toContain(`Names: ${m.names?.join(" | ")}`);
+		expect(files[`en/p/${m.id}.txt`]).toContain(
+			`Motion:\n- ${first?.property}: ${first?.duration}`
+		);
+		expect(files[`en/p/${m.id}.txt`]).toContain(
+			"Reproduce the motion values exactly; do not guess timing or curves. Under prefers-reduced-motion render the final state."
+		);
+		expect(files["catalog.json"]).toContain(`"names"`);
+		expect(files["en/catalog.tsv"].split("\n")[0]).toBe(
+			"id\tgroup\tpage\ttitle\tnames\ttags\tsummary"
+		);
 	});
 });
