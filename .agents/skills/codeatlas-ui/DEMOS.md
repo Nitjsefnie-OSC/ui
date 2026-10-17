@@ -305,3 +305,6 @@ Every demo has a stable number. Fetch one with `get_demo` (MCP) or https://ui.co
 | 400 | Checkbox and radio items | navigation/menu | DropdownMenu, DropdownMenuCheckboxItem, DropdownMenuLabel, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuSeparator, Button |
 | 401 | Submenus | navigation/menu | DropdownMenu, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuSub, DropdownMenuSubTrigger, Button |
 | 402 | Context menu | navigation/menu | DropdownMenu, DropdownMenuItem, DropdownMenuSeparator |
+| 430 | Sortable list | foundation/drag-and-drop | DndLayer |
+| 431 | Board | foundation/drag-and-drop | DndLayer |
+| 432 | Drop zones | foundation/drag-and-drop | DndLayer |

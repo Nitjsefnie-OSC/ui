@@ -1,6 +1,6 @@
 {
 	"version": "4.3.0",
-	"count": 300,
+	"count": 303,
 	"groups": [
 		{
 			"slug": "inputs",
@@ -47,8 +47,8 @@
 		{
 			"slug": "foundation",
 			"first": "220",
-			"last": "231",
-			"count": 12
+			"last": "432",
+			"count": 15
 		},
 		{
 			"slug": "docs-kit",
@@ -13535,6 +13535,153 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/menu#context-menu",
+			"needs": "@codeatlasdev/ui@4.3.0"
+		},
+		{
+			"id": "430",
+			"group": "foundation",
+			"page": "drag-and-drop",
+			"variant": "SortableList",
+			"slug": "sortable-list",
+			"title": "Sortable list",
+			"description": "Drag the grip, press and hold on a touch screen, or focus the grip and press Space.",
+			"summary": "A checklist whose rows reorder by dragging a grip, by touch press-and-hold, or with the keyboard (Space, arrows, Enter).",
+			"use": "Any short ordered list the user curates: checklists, playlists, priorities, form field order.",
+			"spec": [
+				"`const dnd = useDnd();` once per component; `{@attach dnd.sortable(() => ({` on the `ul` with `handle: '.sl__grip'`, `getItems` and `onDrop`",
+				"Each `li` carries `data-dnd-item={task.id}`; the grip `button` has `aria-describedby={dnd.instructionsId}` and an `aria-label` naming the task",
+				"`onDrop` commits the move with `applyMove({ list: tasks }, e, (t) => t.id).list`; nothing re-renders while the pointer moves",
+				"`<DndLayer {dnd} />` renders the keyboard instructions (`dnd.instructionsId`) and the drag styles once; every step is announced to screen readers"
+			],
+			"tags": [
+				"drag",
+				"drop",
+				"sortable",
+				"reorder",
+				"list",
+				"keyboard"
+			],
+			"names": [
+				"Sortable list",
+				"Drag to reorder",
+				"Reorderable list",
+				"Lista ordenável",
+				"Lista reordenable"
+			],
+			"shape": "square",
+			"components": [
+				"DndLayer"
+			],
+			"imports": [
+				{
+					"from": "@codeatlasdev/ui",
+					"names": [
+						"applyMove",
+						"DndLayer",
+						"useDnd",
+						"DndDropEvent"
+					]
+				}
+			],
+			"interactive": true,
+			"demo": "https://ui.codeatlas.com.br/docs/foundation/drag-and-drop#sortable-list",
+			"needs": "@codeatlasdev/ui@4.3.0"
+		},
+		{
+			"id": "431",
+			"group": "foundation",
+			"page": "drag-and-drop",
+			"variant": "Board",
+			"slug": "board",
+			"title": "Board",
+			"description": "Cards reorder inside a column and move between columns. With the keyboard, Space lifts, the arrows move and Enter drops.",
+			"summary": "A three-column board: cards reorder inside a column and move between columns by mouse, touch or keyboard.",
+			"use": "Kanban boards, status pipelines and any set of lists whose items move from one to another.",
+			"spec": [
+				"Every column is `{@attach dnd.sortable(() => ({ id: col, group: 'board',`; lists with the same `group` accept each other's cards",
+				"`onDrop` receives the moved id with its `from` and `to` positions and applies it with `applyMove(lists, e, (c) => c.id)`",
+				"Keyboard: Space lifts the card, ArrowUp and ArrowDown move it inside the column, ArrowLeft and ArrowRight jump to the next column, Enter drops, Escape cancels",
+				"Each card is `<li data-dnd-item={card.id}` with a focusable `button`"
+			],
+			"tags": [
+				"drag",
+				"drop",
+				"kanban",
+				"board",
+				"move",
+				"lists"
+			],
+			"names": [
+				"Kanban board",
+				"Drag between lists",
+				"Cards between columns",
+				"Quadro kanban",
+				"Tablero kanban"
+			],
+			"shape": "wide",
+			"components": [
+				"DndLayer"
+			],
+			"imports": [
+				{
+					"from": "@codeatlasdev/ui",
+					"names": [
+						"applyMove",
+						"DndLayer",
+						"useDnd",
+						"DndDropEvent"
+					]
+				}
+			],
+			"interactive": true,
+			"demo": "https://ui.codeatlas.com.br/docs/foundation/drag-and-drop#board",
+			"needs": "@codeatlasdev/ui@4.3.0"
+		},
+		{
+			"id": "432",
+			"group": "foundation",
+			"page": "drag-and-drop",
+			"variant": "DropZones",
+			"slug": "drop-zones",
+			"title": "Drop zones",
+			"description": "Drag a chip onto a day, or lift it with Space and pick the day with the arrows.",
+			"summary": "Task chips dragged from a tray onto weekday drop zones, with a dashed highlight while a chip is over a day.",
+			"use": "Scheduling, assigning and filing: any place a loose item is dropped onto a target that is not a sortable list.",
+			"spec": [
+				"Each chip is `{@attach dnd.draggable(() => ({ id: t.id, label: t.title }))}` on an element with `data-dnd-item`",
+				"Each day is `{@attach dnd.dropzone(() => ({ id: day, label: day, onDrop: (e) => drop(day, e) }))}`; the zone is outlined while a chip is over it",
+				"Keyboard: Space lifts a chip, the arrows pick the day, Enter drops; the zone name is announced to screen readers"
+			],
+			"tags": [
+				"drag",
+				"drop",
+				"dropzone",
+				"calendar",
+				"schedule"
+			],
+			"names": [
+				"Drop zones",
+				"Drag onto a day",
+				"Calendar drop target",
+				"Zonas de soltar",
+				"Zonas para soltar"
+			],
+			"shape": "wide",
+			"components": [
+				"DndLayer"
+			],
+			"imports": [
+				{
+					"from": "@codeatlasdev/ui",
+					"names": [
+						"DndLayer",
+						"useDnd",
+						"DndDropEvent"
+					]
+				}
+			],
+			"interactive": true,
+			"demo": "https://ui.codeatlas.com.br/docs/foundation/drag-and-drop#drop-zones",
 			"needs": "@codeatlasdev/ui@4.3.0"
 		}
 	]
