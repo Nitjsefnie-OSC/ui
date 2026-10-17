@@ -1,5 +1,5 @@
 {
-	"version": "4.3.0",
+	"version": "4.4.0",
 	"count": 313,
 	"groups": [
 		{
@@ -100,7 +100,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/button#full-width",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "002",
@@ -138,7 +138,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/button#with-icons",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "003",
@@ -177,7 +177,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/button#loading",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "004",
@@ -215,7 +215,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/button#sizes",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "005",
@@ -253,7 +253,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/button#states",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "006",
@@ -295,7 +295,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/button#variants",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "007",
@@ -334,7 +334,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/checkbox#disabled",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "008",
@@ -373,7 +373,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/checkbox#states",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "009",
@@ -412,7 +412,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/checkbox#without-label",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "010",
@@ -453,7 +453,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/combobox#basic",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "011",
@@ -494,7 +494,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/combobox#states",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "012",
@@ -531,7 +531,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/copy-button#default",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "013",
@@ -572,7 +572,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/copy-button#icon-only-and-toast",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "014",
@@ -613,7 +613,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/copy-button#variants-and-sizes",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "015",
@@ -660,7 +660,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/date-picker#calendar-and-rangecalendar",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "016",
@@ -711,7 +711,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/date-picker#min-max-error-and-disabled",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "017",
@@ -757,7 +757,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/date-picker#datefield-and-timefield",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "018",
@@ -802,7 +802,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/date-picker#datepicker-and-daterangepicker",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "019",
@@ -843,7 +843,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/export-menu#default",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "020",
@@ -885,7 +885,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/file-upload#basic",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "021",
@@ -924,7 +924,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/file-upload#images-only-and-disabled",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "022",
@@ -964,7 +964,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/filter-group#role-filter",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "023",
@@ -1015,7 +1015,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/masked-field#documents-and-dates",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "024",
@@ -1054,7 +1054,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/masked-field#use-mask-action",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "025",
@@ -1099,7 +1099,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/masked-field#phone-and-cep",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "026",
@@ -1141,7 +1141,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/money-input#min-max-negative-error-and-disabled",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "027",
@@ -1182,7 +1182,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/money-input#currency-and-locale",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "028",
@@ -1223,7 +1223,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/money-input#default",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "029",
@@ -1262,7 +1262,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/money-input#helpers",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "030",
@@ -1303,7 +1303,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/number-field#basic",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "031",
@@ -1347,7 +1347,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/number-field#states",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "032",
@@ -1386,7 +1386,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/pin-input#default",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "033",
@@ -1427,7 +1427,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/pin-input#states",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "034",
@@ -1467,7 +1467,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/radio#cards",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "035",
@@ -1506,7 +1506,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/radio#disabled",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "036",
@@ -1544,7 +1544,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/radio#horizontal",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "037",
@@ -1583,7 +1583,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/radio#vertical",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "038",
@@ -1622,7 +1622,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/segmented-control#default",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "039",
@@ -1662,7 +1662,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/segmented-control#small-full-width-disabled-item",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "040",
@@ -1702,7 +1702,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/select#basic",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "041",
@@ -1741,7 +1741,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/select#empty-value-option",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "042",
@@ -1779,7 +1779,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/select#placeholder",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "043",
@@ -1819,7 +1819,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/select#states",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "044",
@@ -1860,7 +1860,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/setting-item#switch-rows",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "045",
@@ -1899,7 +1899,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/slider#range",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "046",
@@ -1938,7 +1938,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/slider#single-value",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "047",
@@ -1977,7 +1977,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/slider#step-and-disabled",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "048",
@@ -2017,7 +2017,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/swatch-group#custom-colors",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "049",
@@ -2056,7 +2056,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/swatch-group#theme-presets",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "050",
@@ -2093,7 +2093,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/switch#basic",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "051",
@@ -2131,7 +2131,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/switch#disabled",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "052",
@@ -2171,7 +2171,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/switch#settings-list",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "053",
@@ -2209,7 +2209,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/switch#without-label",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "054",
@@ -2247,7 +2247,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/text-area#basic",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "055",
@@ -2288,7 +2288,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/text-area#states",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "056",
@@ -2326,7 +2326,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/text-field#default",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "057",
@@ -2368,7 +2368,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/text-field#with-icons",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "058",
@@ -2410,7 +2410,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/text-field#states",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "059",
@@ -2447,7 +2447,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/theme-toggle#basic",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "060",
@@ -2490,7 +2490,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/toggle-group#single-and-multiple",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "061",
@@ -2531,7 +2531,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/toggle-group#variants-and-orientation",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "062",
@@ -2576,7 +2576,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/use-form#no-schema",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "063",
@@ -2623,7 +2623,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/use-form#submit-state",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "064",
@@ -2669,7 +2669,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/use-form#with-schema",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "065",
@@ -2712,7 +2712,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/surfaces/accordion#controlled",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "066",
@@ -2754,7 +2754,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/surfaces/accordion#multiple",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "067",
@@ -2796,7 +2796,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/surfaces/accordion#single",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "068",
@@ -2836,7 +2836,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/surfaces/card#tone-and-glow",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "069",
@@ -2876,7 +2876,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/surfaces/card#content-card",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "070",
@@ -2917,7 +2917,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/surfaces/card#header-and-actions",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "071",
@@ -2957,7 +2957,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/surfaces/card#link-card",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "072",
@@ -2997,7 +2997,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/surfaces/card#stat-cards",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "073",
@@ -3039,7 +3039,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/surfaces/collapsible#default-closed",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "074",
@@ -3078,7 +3078,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/surfaces/collapsible#open-by-default",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "075",
@@ -3119,7 +3119,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/surfaces/liquid-glass#refraction-layer",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "076",
@@ -3159,7 +3159,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/surfaces/surface#elevation",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "077",
@@ -3200,7 +3200,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/surfaces/surface#interactive",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "078",
@@ -3240,7 +3240,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/surfaces/surface#materials",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "079",
@@ -3280,7 +3280,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/surfaces/surface#tone-and-variant",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "080",
@@ -3323,7 +3323,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/alert-dialog#async-onconfirm",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "081",
@@ -3366,7 +3366,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/alert-dialog#basic-and-destructive",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "082",
@@ -3407,7 +3407,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/alert-dialog#controlled-pending",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "083",
@@ -3448,7 +3448,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/dialog#chromeless",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "084",
@@ -3490,7 +3490,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/dialog#confirmation",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "085",
@@ -3539,7 +3539,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/dialog#form",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "086",
@@ -3580,7 +3580,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/dialog#info",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "087",
@@ -3626,7 +3626,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/dialog#split",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "088",
@@ -3670,7 +3670,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/drawer#notification-panel",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "089",
@@ -3718,7 +3718,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/drawer#right-default",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "090",
@@ -3763,7 +3763,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/drawer#left-and-bottom",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "091",
@@ -3803,7 +3803,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/lightbox#open-from-a-button",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "092",
@@ -3846,7 +3846,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/progress#animated",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "093",
@@ -3885,7 +3885,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/progress#determinate",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "094",
@@ -3924,7 +3924,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/progress#indeterminate",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "095",
@@ -3967,7 +3967,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/sheet#footer-and-swipetodismiss",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "096",
@@ -4011,7 +4011,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/sheet#swipe-to-dismiss",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "097",
@@ -4055,7 +4055,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/skeleton#card-layout",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "098",
@@ -4099,7 +4099,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/skeleton#image-placeholder",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "099",
@@ -4141,7 +4141,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/skeleton#text-lines",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "100",
@@ -4179,7 +4179,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/spinner#in-a-button",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "101",
@@ -4221,7 +4221,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/spinner#section-loader",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "102",
@@ -4261,7 +4261,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/spinner#sizes",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "103",
@@ -4305,7 +4305,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/toast#variants-and-duration",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "104",
@@ -4346,7 +4346,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/alert#closable",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "105",
@@ -4387,7 +4387,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/display/alert#severities",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "106",
@@ -4426,7 +4426,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/display/alert#with-title",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "107",
@@ -4466,7 +4466,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/avatar#with-image",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "108",
@@ -4505,7 +4505,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/avatar#initials-fallback",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "109",
@@ -4547,7 +4547,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/avatar#shape-and-status",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "110",
@@ -4588,7 +4588,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/avatar#sizes",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "111",
@@ -4628,7 +4628,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/avatar#avatar-stack",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "112",
@@ -4671,7 +4671,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/display/badge#colors",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "113",
@@ -4716,7 +4716,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/display/badge#dot-and-counts",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "114",
@@ -4759,7 +4759,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/display/badge#on-avatars",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "115",
@@ -4797,7 +4797,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/display/chip#basic",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "116",
@@ -4837,7 +4837,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/chip#deletable",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "117",
@@ -4876,7 +4876,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/display/chip#with-icons",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "118",
@@ -4915,7 +4915,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/chip#selectable",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "119",
@@ -4956,7 +4956,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/display/chip#statuschip",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "120",
@@ -4995,7 +4995,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/display/chip#variants-and-size",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "121",
@@ -5036,7 +5036,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/code-snippet#languages",
-			"needs": "@codeatlasdev/ui@4.3.0 + shiki"
+			"needs": "@codeatlasdev/ui@4.4.0 + shiki"
 		},
 		{
 			"id": "122",
@@ -5080,7 +5080,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/data-table#controlled-mode",
-			"needs": "@codeatlasdev/ui@4.3.0 + @tanstack/svelte-table"
+			"needs": "@codeatlasdev/ui@4.4.0 + @tanstack/svelte-table"
 		},
 		{
 			"id": "123",
@@ -5122,7 +5122,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/data-table#simple-mode",
-			"needs": "@codeatlasdev/ui@4.3.0 + @tanstack/svelte-table"
+			"needs": "@codeatlasdev/ui@4.4.0 + @tanstack/svelte-table"
 		},
 		{
 			"id": "124",
@@ -5164,7 +5164,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/display/divider#horizontal",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "125",
@@ -5206,7 +5206,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/display/divider#vertical",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "126",
@@ -5251,7 +5251,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/external-link#in-a-results-table",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "127",
@@ -5290,7 +5290,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/image#fixed-ratio",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "128",
@@ -5331,7 +5331,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/image#srcset-and-sizes",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "129",
@@ -5370,7 +5370,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/display/kbd#shortcuts-in-text",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "130",
@@ -5417,7 +5417,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/live-list#streaming-rows",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "131",
@@ -5459,7 +5459,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/notification-bell#controlled",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "132",
@@ -5501,7 +5501,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/notification-bell#default",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "133",
@@ -5540,7 +5540,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/pagination#basic",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "134",
@@ -5577,7 +5577,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/pagination#few-items",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "135",
@@ -5615,7 +5615,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/pagination#more-siblings",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "136",
@@ -5659,7 +5659,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/scroll-area#horizontal-scroll",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "137",
@@ -5701,7 +5701,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/scroll-area#vertical-scroll",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "138",
@@ -5745,7 +5745,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/display/table#cards-on-narrow-containers",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "139",
@@ -5788,7 +5788,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/display/table#default-scroll",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "140",
@@ -5826,7 +5826,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/display/timeline#simple",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "141",
@@ -5868,7 +5868,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/display/timeline#with-variants",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "142",
@@ -5908,7 +5908,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/tooltip#text-trigger",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "143",
@@ -5949,7 +5949,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/tooltip#custom-delay",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "144",
@@ -5991,7 +5991,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/tooltip#on-icon-buttons",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "145",
@@ -6034,7 +6034,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/tooltip#all-sides",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "146",
@@ -6080,7 +6080,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/actions#autofocus",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "147",
@@ -6118,7 +6118,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/actions#clickoutside",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "148",
@@ -6156,7 +6156,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/actions#clipboard",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "149",
@@ -6202,7 +6202,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/actions#focustrap",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "150",
@@ -6240,7 +6240,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/actions#longpress",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "151",
@@ -6287,7 +6287,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/app-bar#default",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "152",
@@ -6336,7 +6336,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/app-bar#with-leading-icon",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "153",
@@ -6377,7 +6377,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/breadcrumb#levels",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "154",
@@ -6414,7 +6414,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/breadcrumb#custom-separator",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "155",
@@ -6454,7 +6454,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/command-palette#keyboard",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "156",
@@ -6502,7 +6502,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/command-palette#open-the-palette",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "157",
@@ -6545,7 +6545,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/drawer#left-and-right",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "158",
@@ -6595,7 +6595,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/menu#default",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "159",
@@ -6642,7 +6642,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/menu#icon-trigger",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "160",
@@ -6685,7 +6685,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/popover#basic",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "161",
@@ -6734,7 +6734,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/popover#form",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "162",
@@ -6785,7 +6785,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/stepper#horizontal-stepper",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "163",
@@ -6832,7 +6832,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/tabs#controlled",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "164",
@@ -6878,7 +6878,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/tabs#default",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "165",
@@ -6910,7 +6910,7 @@
 			"imports": [],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/app-shell#anatomy",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "166",
@@ -6962,7 +6962,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/app-shell#live-shell",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "167",
@@ -7001,7 +7001,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/empty-state#basic",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "168",
@@ -7043,7 +7043,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/empty-state#hero",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "169",
@@ -7083,7 +7083,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/empty-state#no-icon",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "170",
@@ -7122,7 +7122,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/empty-state#no-results",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "171",
@@ -7162,7 +7162,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/empty-state#error-or-offline",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "172",
@@ -7199,7 +7199,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/error-page#404-without-actions",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "173",
@@ -7254,7 +7254,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/form-page#basic-form",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "174",
@@ -7299,7 +7299,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/form-page#without-header",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "175",
@@ -7342,7 +7342,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/kpi-card#basic-metrics",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "176",
@@ -7383,7 +7383,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/kpi-card#negative-trend",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "177",
@@ -7425,7 +7425,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/kpi-card#without-trend",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "178",
@@ -7468,7 +7468,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/kpi-grid#four-cards",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "179",
@@ -7510,7 +7510,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/kpi-grid#three-cards",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "180",
@@ -7556,7 +7556,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/layout-primitives#container-and-section",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "181",
@@ -7597,7 +7597,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/layout-primitives#responsive-grid",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "182",
@@ -7642,7 +7642,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/layout-primitives#flex-stack-and-box",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "183",
@@ -7695,7 +7695,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/list-page#applist",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "184",
@@ -7746,7 +7746,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/list-page#appsettings",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "185",
@@ -7794,7 +7794,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/list-page#pageshell",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "186",
@@ -7841,7 +7841,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/mobile-pane#chat",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "187",
@@ -7893,7 +7893,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/page-shell#dashboard-page",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "188",
@@ -7939,7 +7939,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/sticky-actions#end-aligned",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "189",
@@ -7980,7 +7980,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/sticky-actions#stretch",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "190",
@@ -8029,7 +8029,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/bar#horizontal-bars",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "191",
@@ -8078,7 +8078,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/bar#stacked-bars",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "192",
@@ -8132,7 +8132,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/bar#grouped-and-stacked",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "193",
@@ -8180,7 +8180,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/bar#vertical-bars",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "194",
@@ -8232,7 +8232,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/gauge#animated-counter",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "195",
@@ -8283,7 +8283,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/gauge#progress-ring",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "196",
@@ -8327,7 +8327,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/gauge#simple-gauge",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "197",
@@ -8377,7 +8377,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/gauge#custom-zones",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "198",
@@ -8426,7 +8426,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/heatmap#calendar-heatmap",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "199",
@@ -8476,7 +8476,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/heatmap#hour-by-day-matrix",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "200",
@@ -8530,7 +8530,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/heatmap#year-toggle",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "201",
@@ -8579,7 +8579,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/line#area-with-gradient-fill",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "202",
@@ -8627,7 +8627,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/line#multi-line-comparison",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "203",
@@ -8675,7 +8675,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/line#simple-line",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "204",
@@ -8724,7 +8724,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/line#real-time-stream",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "205",
@@ -8795,7 +8795,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/overview#dashboard",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "206",
@@ -8847,7 +8847,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/pie#animated-proportions",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "207",
@@ -8894,7 +8894,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/pie#donut-with-center-kpi",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "208",
@@ -8939,7 +8939,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/pie#basic-donut",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "209",
@@ -8984,7 +8984,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/pie#rose-chart",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "210",
@@ -9032,7 +9032,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/radar#comparison",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "211",
@@ -9087,7 +9087,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/radar#interactive-team-builder",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "212",
@@ -9133,7 +9133,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/radar#simple-radar",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "213",
@@ -9181,7 +9181,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/scatter#basic-scatter",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "214",
@@ -9229,7 +9229,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/scatter#bubble-chart",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "215",
@@ -9278,7 +9278,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/scatter#clustered-by-tier",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "216",
@@ -9327,7 +9327,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/sparklines#bar-sparklines",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "217",
@@ -9381,7 +9381,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/sparklines#kpi-cards-with-trend-lines",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "218",
@@ -9436,7 +9436,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/sparklines#live-streaming-micro-charts",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "219",
@@ -9484,7 +9484,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/charts/sparklines#table-row-sparklines",
-			"needs": "@codeatlasdev/ui@4.3.0 + echarts"
+			"needs": "@codeatlasdev/ui@4.4.0 + echarts"
 		},
 		{
 			"id": "220",
@@ -9514,7 +9514,7 @@
 			"imports": [],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/foundation/colors#brand",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "221",
@@ -9542,7 +9542,7 @@
 			"imports": [],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/foundation/colors#outline",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "222",
@@ -9572,7 +9572,7 @@
 			"imports": [],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/foundation/colors#semantic",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "223",
@@ -9601,7 +9601,7 @@
 			"imports": [],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/foundation/colors#surfaces",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "224",
@@ -9630,7 +9630,7 @@
 			"imports": [],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/foundation/colors#text",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "225",
@@ -9660,7 +9660,7 @@
 			"imports": [],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/foundation/materials#button-glass-variants",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "226",
@@ -9700,7 +9700,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/foundation/materials#glass-tiers",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "227",
@@ -9740,7 +9740,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/foundation/materials#tinted-and-glowing",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "228",
@@ -9770,7 +9770,7 @@
 			"imports": [],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/foundation/shadows#shadow-scale",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "229",
@@ -9801,7 +9801,7 @@
 			"imports": [],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/foundation/typography#body-and-ui-scale",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "230",
@@ -9832,7 +9832,7 @@
 			"imports": [],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/foundation/typography#font-families",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "231",
@@ -9861,7 +9861,7 @@
 			"imports": [],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/foundation/typography#heading-scale",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "232",
@@ -9905,7 +9905,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/docs-kit/docs#linkcard-cardgrid-and-methodbadge",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "233",
@@ -9948,7 +9948,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/docs-kit/docs#codetabs",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "234",
@@ -9993,7 +9993,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/docs-kit/docs#docsnav-and-tableofcontents",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "235",
@@ -10036,7 +10036,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/docs-kit/docs#ca-prose-callout-and-steps",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "236",
@@ -10080,7 +10080,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/docs-kit/docs#docssearch",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "237",
@@ -10127,7 +10127,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/tabs#scrollable",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "238",
@@ -10176,7 +10176,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/tabs#icons",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "239",
@@ -10227,7 +10227,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/menu#leading-icons-and-brand-logos",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "240",
@@ -10267,7 +10267,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/display/avatar#iconfallback",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "241",
@@ -10320,7 +10320,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/skeleton#the-skeleton-prop",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "242",
@@ -10363,7 +10363,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/lightbox#gallery-with-video-caption-and-download",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "243",
@@ -10401,7 +10401,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/install-prompt#ios-instructions",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "244",
@@ -10440,7 +10440,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/install-prompt#native-prompt",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "245",
@@ -10497,7 +10497,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/record-list#apps",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "246",
@@ -10542,7 +10542,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/record-list#without-a-menu",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "247",
@@ -10595,7 +10595,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/record-list#phone-width",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "248",
@@ -10636,7 +10636,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/message-bubble#a-grouped-conversation",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "249",
@@ -10673,7 +10673,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/display/message-bubble#delivery-status",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "250",
@@ -10711,7 +10711,7 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/display/message-bubble#quote-and-reactions",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "251",
@@ -10752,7 +10752,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/conversation-item#inbox",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "252",
@@ -10791,7 +10791,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/audio-player#voice-messages",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "253",
@@ -10831,7 +10831,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/media-grid#mixed-media",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "254",
@@ -10873,7 +10873,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/virtual-list#chat-history",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "255",
@@ -10915,7 +10915,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/loading-boundary#fast-and-slow-loads",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "256",
@@ -10969,7 +10969,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/basics#fade-rise",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "300",
@@ -11029,7 +11029,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/text#split-text-reveal",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "301",
@@ -11088,7 +11088,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/text#text-scramble",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "302",
@@ -11148,7 +11148,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/text#odometer-roll",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "303",
@@ -11213,7 +11213,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/text#infinite-marquee",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "304",
@@ -11278,7 +11278,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/text#typewriter",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "305",
@@ -11335,7 +11335,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/text#shine-sweep",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "306",
@@ -11395,7 +11395,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/text#count-up",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "307",
@@ -11455,7 +11455,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/text#blur-in",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "320",
@@ -11515,7 +11515,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/scroll#staggered-reveal-on-scroll",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "321",
@@ -11573,7 +11573,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/scroll#view-timeline-reveal",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "322",
@@ -11644,7 +11644,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/scroll#parallax",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "323",
@@ -11700,7 +11700,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/scroll#reading-progress-bar",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "324",
@@ -11756,7 +11756,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/scroll#horizontal-scroll-section",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "325",
@@ -11817,7 +11817,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/scroll#pinned-step-story",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "326",
@@ -11879,7 +11879,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/scroll#scroll-linked-counter-and-chart-draw",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "340",
@@ -11939,7 +11939,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/micro#magnetic-button",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "341",
@@ -11995,7 +11995,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/micro#press-spring",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "342",
@@ -12055,7 +12055,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/micro#morphing-toggle",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "343",
@@ -12115,7 +12115,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/micro#like-burst",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "344",
@@ -12171,7 +12171,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/micro#hold-to-confirm",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "345",
@@ -12233,7 +12233,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/micro#copy-to-check",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "346",
@@ -12294,7 +12294,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/micro#add-to-cart-fly",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "347",
@@ -12350,7 +12350,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/micro#tilt-card",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "348",
@@ -12410,7 +12410,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/micro#spring-switch",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "360",
@@ -12474,7 +12474,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/transitions#shared-element",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "361",
@@ -12530,7 +12530,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/transitions#flip-reorder",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "362",
@@ -12592,7 +12592,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/transitions#height-spring",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "363",
@@ -12655,7 +12655,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/transitions#tab-indicator",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "364",
@@ -12724,7 +12724,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/transitions#stacked-toasts",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "365",
@@ -12783,7 +12783,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/transitions#sheet-spring",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "366",
@@ -12851,7 +12851,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/transitions#filter-list",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "380",
@@ -12908,7 +12908,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/hero-ambient#cursor-spotlight",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "381",
@@ -12966,7 +12966,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/hero-ambient#grid-ripple",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "382",
@@ -13024,7 +13024,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/hero-ambient#animated-gradient-field",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "383",
@@ -13083,7 +13083,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/hero-ambient#before-and-after-slider",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "384",
@@ -13142,7 +13142,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/hero-ambient#cursor-trail",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "385",
@@ -13200,7 +13200,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/hero-ambient#hero-intro-sequence",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "386",
@@ -13260,7 +13260,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/motion/hero-ambient#card-tilt-with-glare",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "387",
@@ -13300,7 +13300,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/checkbox#shift-range-selection",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "388",
@@ -13343,7 +13343,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/file-upload#external-trigger-no-list",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "389",
@@ -13385,7 +13385,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/text-field#hidden-label",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "400",
@@ -13438,7 +13438,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/menu#checkbox-and-radio-items",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "401",
@@ -13490,7 +13490,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/menu#submenus",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "402",
@@ -13537,7 +13537,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/menu#context-menu",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "420",
@@ -13580,7 +13580,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/combobox#multiple",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "421",
@@ -13621,7 +13621,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/combobox#creatable-tags",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "422",
@@ -13667,7 +13667,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/command-palette#async-results",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "430",
@@ -13717,7 +13717,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/foundation/drag-and-drop#sortable-list",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "431",
@@ -13767,7 +13767,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/foundation/drag-and-drop#board",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "432",
@@ -13814,7 +13814,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/foundation/drag-and-drop#drop-zones",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "433",
@@ -13872,7 +13872,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/display/data-table#groups",
-			"needs": "@codeatlasdev/ui@4.3.0 + @tanstack/svelte-table"
+			"needs": "@codeatlasdev/ui@4.4.0 + @tanstack/svelte-table"
 		},
 		{
 			"id": "460",
@@ -13917,7 +13917,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/tabs#line",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "461",
@@ -13958,7 +13958,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/drawer#own-header",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "462",
@@ -14004,7 +14004,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/alert-dialog#type-to-confirm",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "470",
@@ -14051,7 +14051,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/navigation/popover#close-on-pick",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "480",
@@ -14097,7 +14097,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/app-shell#panel-width",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		},
 		{
 			"id": "481",
@@ -14154,7 +14154,7 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/app-shell#color-count-actions-and-reorder",
-			"needs": "@codeatlasdev/ui@4.3.0"
+			"needs": "@codeatlasdev/ui@4.4.0"
 		}
 	]
 }
