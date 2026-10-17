@@ -303,6 +303,9 @@ export const CATALOG: readonly DemoEntry[] = [
 	{ id: "387", path: "inputs/checkbox/RangeSelect" },
 	{ id: "388", path: "inputs/file-upload/ExternalTrigger" },
 	{ id: "389", path: "inputs/text-field/HiddenLabel" },
+	{ id: "400", path: "navigation/menu/Selection" },
+	{ id: "401", path: "navigation/menu/Submenu" },
+	{ id: "402", path: "navigation/menu/ContextMenu" },
 ];
 
 /**

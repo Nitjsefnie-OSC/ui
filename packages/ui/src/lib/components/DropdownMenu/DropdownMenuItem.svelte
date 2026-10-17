@@ -1,9 +1,10 @@
 <script lang="ts">
   import type { Snippet } from 'svelte';
   import { getContext } from 'svelte';
+  import type { HTMLAttributes } from 'svelte/elements';
   import { MENU_CONTEXT, type MenuContext } from './menu-context.js';
 
-  interface Props {
+  interface Props extends Omit<HTMLAttributes<HTMLDivElement>, 'class' | 'children' | 'onclick' | 'role' | 'tabindex'> {
     class?: string;
     onclick?: () => void;
     disabled?: boolean;
@@ -26,6 +27,7 @@
     icon,
     brandIcon = false,
     children,
+    ...rest
   }: Props = $props();
 
   const menu = getContext<MenuContext | undefined>(MENU_CONTEXT);
@@ -41,6 +43,7 @@
 <!-- Enter/Space are handled by the menu's keydown (roving focus), which clicks the focused item. -->
 <!-- svelte-ignore a11y_click_events_have_key_events -->
 <div
+  {...rest}
   role="menuitem"
   tabindex="-1"
   class="ca-dropdown-item ca-dropdown-item--{variant} {className}"
@@ -102,6 +105,16 @@
     :global(.ca-dropdown-item__icon[data-brand]) {
       color: initial;
       opacity: 1;
+    }
+    /* Checkbox and radio items reserve the same indicator column, so labels line up checked or not. */
+    :global(.ca-dropdown-item__indicator) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: none;
+      inline-size: var(--ca-space-3-5);
+      block-size: var(--ca-space-3-5);
+      color: var(--ca-brand-text);
     }
     :global(.ca-dropdown-item--destructive) {
       color: var(--ca-semantic-error);
