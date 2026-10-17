@@ -3,7 +3,6 @@ import { render } from "vitest-browser-svelte";
 import { checkA11y } from "../../../../tests/a11y";
 import Harness from "./LoadingBoundary.test.svelte";
 
-const wait = (ms: number) => new Promise((r) => setTimeout(r, ms));
 const release = (s: { component: unknown }) => (s.component as { release: () => void }).release();
 const busy = (c: Element) => c.querySelector<HTMLElement>("[aria-busy='true']");
 const skeleton = (c: Element) => c.querySelector(".ca-loading-boundary__pending .ca-skeleton");
@@ -33,18 +32,23 @@ describe("LoadingBoundary", () => {
 	});
 
 	it("keeps the placeholder at least `minDuration` once it showed", async () => {
-		const screen = await render(Harness, { props: { delay: 20, minDuration: 400 } });
-		const start = performance.now();
-		await expect.poll(() => skeleton(screen.container)).not.toBeNull();
+		// A busy suite stalls the main thread between `delay` firing and the placeholder reaching the
+		// DOM (here: 120 ms inside its render). The hold must still last `minDuration` from there (#307).
+		// The placeholder stamps its own mount and unmount, so the hold is measured on the node the
+		// user saw, not from before/after `render` and not from an observer that lags the DOM.
+		const stamps: { mounted?: number; unmounted?: number } = {};
+		const screen = await render(Harness, {
+			props: { delay: 20, minDuration: 400, stamps, stall: 120 },
+		});
+		await expect.poll(() => stamps.mounted).toBeDefined();
 		release(screen);
-		await wait(150);
-		// Resolved already, but the placeholder still holds and the content stays hidden: no flash.
-		expect(skeleton(screen.container)).not.toBeNull();
+		// Resolved already, but the boundary holds: no flash of content.
+		await expect.poll(() => busy(screen.container)?.getAttribute("data-state")).toBe("holding");
+		expect(stamps.unmounted).toBeUndefined();
 		expect(content(screen.container)?.checkVisibility()).toBe(false);
-		await expect.poll(() => skeleton(screen.container), { timeout: 2000 }).toBeNull();
-		// shown at ~delay (20 ms) after `start`; held 400 ms from then.
-		expect(performance.now() - start).toBeGreaterThanOrEqual(400);
-		expect(content(screen.container)?.checkVisibility()).toBe(true);
+		await expect.poll(() => stamps.unmounted, { timeout: 4000 }).toBeDefined();
+		expect((stamps.unmounted ?? 0) - (stamps.mounted ?? 0)).toBeGreaterThanOrEqual(400);
+		await expect.poll(() => content(screen.container)?.checkVisibility()).toBe(true);
 	});
 
 	it("renders a custom `pending` snippet instead of the skeleton", async () => {
