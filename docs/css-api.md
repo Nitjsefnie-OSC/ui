@@ -20,7 +20,7 @@ Total: 829 unique classes across 83 components.
 
 ## AlertDialog
 
-`.ca-alert-dialog` `.ca-alert-dialog__actions` `.ca-dialog` `.ca-dialog--sm` `.ca-dialog__actions` `.ca-dialog__description` `.ca-dialog__header` `.ca-dialog__title` `.ca-overlay`
+`.ca-alert-dialog` `.ca-alert-dialog__actions` `.ca-dialog` `.ca-dialog--sm` `.ca-dialog__actions` `.ca-dialog__body` `.ca-dialog__description` `.ca-dialog__header` `.ca-dialog__title` `.ca-overlay`
 
 ## AppForm
 
@@ -137,7 +137,7 @@ Total: 829 unique classes across 83 components.
 
 ## Drawer
 
-`.ca-drawer` `.ca-drawer--bottom` `.ca-drawer--left` `.ca-drawer--right` `.ca-drawer-bottom-in` `.ca-drawer-bottom-out` `.ca-drawer-left-in` `.ca-drawer-left-out` `.ca-drawer-right-in` `.ca-drawer-right-out` `.ca-drawer__actions` `.ca-drawer__body` `.ca-drawer__header` `.ca-drawer__title` `.ca-layer-close` `.ca-overlay` `.ca-overlay--drawer`
+`.ca-drawer` `.ca-drawer--bottom` `.ca-drawer--left` `.ca-drawer--right` `.ca-drawer-bottom-in` `.ca-drawer-bottom-out` `.ca-drawer-left-in` `.ca-drawer-left-out` `.ca-drawer-right-in` `.ca-drawer-right-out` `.ca-drawer__actions` `.ca-drawer__body` `.ca-drawer__header` `.ca-drawer__header--bare` `.ca-drawer__title` `.ca-layer-close` `.ca-overlay` `.ca-overlay--drawer`
 
 ## DropdownMenu
 
@@ -411,6 +411,7 @@ These attributes are part of the public contract too (an app can restyle one axi
 | `data-material` | `auto` `solid` `frosted` `glass` `liquid` | `.ca-surface` |
 | `data-tone` | `neutral` `brand` `success` `warning` `error` `info` | `.ca-surface` |
 | `data-variant` | `filled` `outlined` `ghost` | `.ca-surface` |
+| `data-variant` | `pill` `line` | `.ca-tabs`, `.ca-tabs-list`, `.ca-tabs-trigger` (the `variant` prop of `Tabs`) |
 | `data-radius` | `none` `sm` `md` `lg` `xl` `pill` | `.ca-surface` |
 | `data-interactive`, `data-glow` | present or absent | `.ca-surface` |
 | `data-ca-blur` | `ultra-thin` `thin` `regular` `thick` `chrome` `mat-thin` `mat-regular` `overlay` `chrome-layer` `tooltip` | any blurred element that is not a `.ca-surface` (Tabs list, Chip, Toast, Rail, Panel, FloatingLayer...) |
