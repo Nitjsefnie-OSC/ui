@@ -9,6 +9,7 @@
  * a token with --ca-* on :root, or a component rule with the same single-class selector, no
  * !important and no doubled classes. */
 @layer ca.reset, ca.tokens, ca.themes, ca.base, ca.materials, ca.utilities, ca.components;
+@import url('./reset.css') layer(ca.reset);
 @import url('./base.css') layer(ca.base);
 @import url('./tokens.css') layer(ca.tokens);
 @import url('./presets/amber.css') layer(ca.themes);
