@@ -319,7 +319,7 @@ export const CATALOG: readonly DemoEntry[] = [
 	{ id: "470", path: "navigation/popover/CloseOnPick" },
 	{ id: "480", path: "layout/app-shell/ResizablePanel" },
 	{ id: "481", path: "layout/app-shell/ItemExtras" },
-	{ id: "560", path: "inputs/button/NeutralTone" },
+	{ id: "640", path: "inputs/button/NeutralTone" },
 ];
 
 /**
