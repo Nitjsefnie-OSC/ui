@@ -319,8 +319,8 @@ export const CATALOG: readonly DemoEntry[] = [
 	{ id: "470", path: "navigation/popover/CloseOnPick" },
 	{ id: "480", path: "layout/app-shell/ResizablePanel" },
 	{ id: "481", path: "layout/app-shell/ItemExtras" },
-	{ id: "482", path: "inputs/chip-group/Wrap" },
-	{ id: "483", path: "inputs/chip-group/FormError" },
+	{ id: "720", path: "inputs/chip-group/Wrap" },
+	{ id: "721", path: "inputs/chip-group/FormError" },
 ];
 
 /**
