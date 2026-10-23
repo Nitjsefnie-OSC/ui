@@ -263,6 +263,7 @@ export type {
 	MotionOptions,
 	Paper,
 	PresetDefinition,
+	PresetSizes,
 	ResolvedTheme,
 	SchemeColors,
 	ThemeDefinition,
