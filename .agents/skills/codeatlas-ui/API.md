@@ -156,15 +156,16 @@ Classes: `ca-app-settings` `ca-app-settings__actions` `ca-app-settings__body` `c
 | `collapseShortPanel?` | `boolean` | `false` | Collapses the panel to the rail for a module with 2 destinations or fewer, so a short list does not reserve a whole column of empty background. Off by default: a 2-item panel stays open (a single-destination module never shows one either way). Opening the panel for a longer module still works. |
 | `reorder?` | `NavExtras['reorder']` |  | Enables `onReorder` on sections and modules: pass the exported `NavReorder` component. Opt-in so the drag engine is only bundled by apps that reorder. |
 | `itemMenu?` | `NavExtras['itemMenu']` |  | Renders `NavItem.actions` as a "…" menu: pass the exported `NavItemMenu` component. Opt-in so DropdownMenu is only bundled by apps that use per-item menus. |
+| `stageVisible?` | `boolean` | `true` | `false` hides the stage (`visibility: hidden`, `inert`) and tells it to pause, without unmounting it: for a full-page route that covers it. A page can also set `data-ca-stage="hidden"` on `<html>` (what `PageFrame mode="page"` does). |
 | `railLabels?` | `boolean` | `false` | Shows each module's label as a caption under its rail icon. |
 | `bottomNavPrimary?` | `number` |  | Most tabs on the mobile bottom navigation. With more modules the first `bottomNavPrimary - 1` stay and the last tab is "More", a dialog with the rest. Default 5. |
 | `moreSheet?` | `Component<NavMoreSheetProps>` |  | Replaces the built-in "More" dialog with another component: pass the exported `NavMoreSheet` for a full `Sheet` (swipe to dismiss, exit animation). Opt-in because `Sheet` adds about 10 kB gzip to the shell; the built-in dialog is a plain native `<dialog>` and costs about 1 kB. |
 | `mainId?` | `string \| null` | `'main'` | `id` given to the content region, the target of the skip link. By default the region is the page's `<main id tabindex="-1">` landmark. Pass `null` when your own `<main id="main" tabindex="-1">` is the target: the region then renders as a plain `div` so the page never gets two landmarks. |
 | `skipLink?` | `boolean` | `true` | Render the "Skip to content" link. Turn it off when the shell is embedded in a page that already has one (a framed demo, a preview), so the page does not get two. |
 
-Snippets: `header`, `brand`, `railBottom`, `railTop`, `bottomNavOverflow`, `mobileHeaderActions`, `mobileTitle`, `children`
+Snippets: `stage` (`Snippet<[{ hidden: boolean }]>`), `header`, `brand`, `railBottom`, `railTop`, `bottomNavOverflow`, `mobileHeaderActions`, `mobileTitle`, `children`
 
-Classes: `ca-main` `ca-panel` `ca-shell` `ca-shell__content` `ca-shell__desktop-header` `ca-shell__mobile-header` `ca-sidebar`
+Classes: `ca-main` `ca-panel` `ca-shell` `ca-shell--stage` `ca-shell__body` `ca-shell__content` `ca-shell__desktop-header` `ca-shell__mobile-header` `ca-shell__stage` `ca-shell__stage--hidden` `ca-sidebar`
 
 ## AudioPlayer
 

@@ -21,6 +21,7 @@ Svelte 5 UI framework. Components are self-contained and prop-driven. Compose th
 2. **Never use arbitrary colors.** Use `--ca-*` semantic tokens or component variants.
 3. **Never add `padding:` or `margin:` inline.** Use component props or `--ca-space-N` tokens.
 4. **Never put AppShellLayout in a shared layout.** Only in authenticated route layouts (e.g. `painel/+layout.svelte`).
+4b. **A live map/canvas behind every screen goes in `AppShellLayout`'s `stage` snippet**, never in a hand-built `position: absolute` layer: it mounts once, is click-through (panels use `class="ca-stage-panel"`), and reads `--ca-shell-inset-*`. Hide and pause it with `stageVisible` or `data-ca-stage="hidden"` on `<html>`.
 5. **CSS imports go once, in the root layout only.**
 6. **Import from `@codeatlasdev/ui`**, never from internal paths like `../../../components/Button`.
 7. **Never combine `will-change: transform` with `backdrop-filter`.** Kills glass blur.
