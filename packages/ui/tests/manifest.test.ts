@@ -2,6 +2,7 @@ import { describe, expect, it } from "bun:test";
 import {
 	buildManifest,
 	buildTokens,
+	type ExportKind,
 	extractClasses,
 	extractTokens,
 	type ManifestToken,
@@ -90,7 +91,7 @@ describe("non-component exports (#57)", () => {
 		manifest.exports.find((e) => e.name === name && (!entry || e.import === entry));
 
 	it("documents the exports the issue names, with import path, kind and signature", () => {
-		const expected: Array<[string, string, string, RegExp]> = [
+		const expected: Array<[string, string, ExportKind, RegExp]> = [
 			["setLocale", "@codeatlasdev/ui", "function", /^function setLocale\(next: Locale/],
 			["registerLocale", "@codeatlasdev/ui", "function", /^function registerLocale\(id: Locale/],
 			["caErrorPlugin", "@codeatlasdev/ui/vite", "function", /^function caErrorPlugin\(/],
