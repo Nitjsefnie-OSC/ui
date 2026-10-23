@@ -328,6 +328,9 @@ Every demo has a stable number. Fetch one with `get_demo` (MCP) or https://ui.co
 | 530 | Labels, search slot, badges and More | layout/app-shell | AppShellLayout, Button, PageShell, Card |
 | 531 | Stage | layout/app-shell | AppShellLayout, Button, Card, PageShell |
 | 540 | Display role | display/heading | Heading |
+| 541 | Animated and static | display/highlight | Highlight |
+| 542 | Strike and rewrite | display/strike-through | Highlight, StrikeThrough |
+| 543 | Paper grain | surfaces/surface | Surface |
 | 600 | Reading width with an aside | layout/page-shell | PageShell, Card, TextField, Stack |
 | 601 | Short panel | layout/app-shell | AppShellLayout, PageShell, Card |
 | 610 | Map, split and page | layout/page-frame | PageFrame, Button, TextField, SegmentedControl |
