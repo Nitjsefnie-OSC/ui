@@ -1,12 +1,12 @@
 {
 	"version": "4.5.0",
-	"count": 313,
+	"count": 314,
 	"groups": [
 		{
 			"slug": "inputs",
 			"first": "001",
-			"last": "421",
-			"count": 69
+			"last": "560",
+			"count": 70
 		},
 		{
 			"slug": "surfaces",
@@ -14154,6 +14154,50 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/app-shell#color-count-actions-and-reorder",
+			"needs": "@codeatlasdev/ui@4.5.0"
+		},
+		{
+			"id": "560",
+			"group": "inputs",
+			"page": "button",
+			"variant": "NeutralTone",
+			"slug": "neutral-tone",
+			"title": "Neutral tone",
+			"description": "",
+			"summary": "One brand filled Button beside secondary actions drawn with tone=\"neutral\": an outlined Button, a small ghost Button and an outlined IconButton.",
+			"use": "Dense work screens (queues, inboxes, CRMs) with one primary action and several secondary ones that must not compete with it.",
+			"spec": [
+				"`<Button variant=\"filled\">` labelled Send reply is the only brand-coloured control",
+				"`<Button variant=\"outlined\" tone=\"neutral\">` labelled Edit message",
+				"`<Button variant=\"ghost\" tone=\"neutral\" size=\"sm\">` labelled Snooze",
+				"`<IconButton variant=\"outlined\" tone=\"neutral\" aria-label=\"More actions\">` with a MoreHorizontal icon",
+				"Wrapping flex `.row` with `gap: var(--ca-space-3)`"
+			],
+			"tags": [
+				"button",
+				"icon-button",
+				"tone",
+				"neutral",
+				"secondary",
+				"outlined",
+				"ghost"
+			],
+			"shape": "wide",
+			"components": [
+				"Button",
+				"IconButton"
+			],
+			"imports": [
+				{
+					"from": "@codeatlasdev/ui",
+					"names": [
+						"Button",
+						"IconButton"
+					]
+				}
+			],
+			"interactive": false,
+			"demo": "https://ui.codeatlas.com.br/docs/inputs/button#neutral-tone",
 			"needs": "@codeatlasdev/ui@4.5.0"
 		}
 	]
