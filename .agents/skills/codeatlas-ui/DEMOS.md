@@ -326,4 +326,5 @@ Every demo has a stable number. Fetch one with `get_demo` (MCP) or https://ui.co
 | 600 | Reading width with an aside | layout/page-shell | PageShell, Card, TextField, Stack |
 | 601 | Short panel | layout/app-shell | AppShellLayout, PageShell, Card |
 | 610 | Map, split and page | layout/page-frame | PageFrame, Button, TextField, SegmentedControl |
+| 642 | Stats in a card | layout/kpi-card | Card, Stat |
 | 800 | Themed map | map/stage | MapControls, MapStage |

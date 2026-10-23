@@ -1,6 +1,6 @@
 {
 	"version": "4.5.0",
-	"count": 322,
+	"count": 323,
 	"groups": [
 		{
 			"slug": "inputs",
@@ -35,8 +35,8 @@
 		{
 			"slug": "layout",
 			"first": "165",
-			"last": "610",
-			"count": 35
+			"last": "642",
+			"count": 36
 		},
 		{
 			"slug": "charts",
@@ -14532,6 +14532,51 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/page-frame#map-split-and-page",
+			"needs": "@codeatlasdev/ui@4.5.0"
+		},
+		{
+			"id": "642",
+			"group": "layout",
+			"page": "kpi-card",
+			"variant": "Stats",
+			"slug": "stats-in-a-card",
+			"title": "Stats in a card",
+			"description": "",
+			"summary": "A glass Card titled This week holding three card-less Stat blocks in a responsive grid: leads with a hint, reply rate with a unit, trend and hint, and booked calls with a positive trend.",
+			"use": "Plain statistics inside an existing card or panel, with no nested box, instead of several KpiCards.",
+			"spec": [
+				"`<Card material=\"glass\" title=\"This week\" headingLevel={3} class=\"stats-card\">` with `max-width: 640px`",
+				"`<Stat label=\"Leads this week\" value=\"128\" hint=\"12 more than last week\" />`",
+				"`<Stat label=\"Reply rate\" value=\"18\" unit=\"%\" trend={-2.4} hint=\"Goal: 25%\" />`",
+				"`<Stat label=\"Booked calls\" value=\"9\" trend={12.5} />`",
+				"The Stats sit in an auto-fit grid, `minmax(150px, 1fr)`, `gap: var(--ca-space-5)`"
+			],
+			"tags": [
+				"stat",
+				"kpi",
+				"metric",
+				"statistic",
+				"dashboard",
+				"card-less",
+				"hint",
+				"trend"
+			],
+			"shape": "wide",
+			"components": [
+				"Card",
+				"Stat"
+			],
+			"imports": [
+				{
+					"from": "@codeatlasdev/ui",
+					"names": [
+						"Card",
+						"Stat"
+					]
+				}
+			],
+			"interactive": false,
+			"demo": "https://ui.codeatlas.com.br/docs/layout/kpi-card#stats-in-a-card",
 			"needs": "@codeatlasdev/ui@4.5.0"
 		},
 		{
