@@ -5,6 +5,8 @@
 
   interface Props {
     title?: string;
+    /** Display text role for the title: `--ca-display-tracking`, `--ca-display-leading` and the fluid `--ca-font-size-display-3`. */
+    display?: boolean;
     description?: string;
     gap?: number;
     maxWidth?: string;
@@ -13,7 +15,7 @@
     children?: Snippet;
   }
 
-  let { title, description, gap, maxWidth, actions, class: className = '', children }: Props = $props();
+  let { title, display = false, description, gap, maxWidth, actions, class: className = '', children }: Props = $props();
   const titleId = $props.id();
   // The page <h1> is rendered above; titles inside the shell default to <h2>.
   provideSectionHeadingLevel();
@@ -40,7 +42,7 @@
     <div class="ca-page-shell__header">
       <div class="ca-page-shell__meta">
         {#if title}
-          <h1 class="ca-page-shell__title ca-sr-only--shell" id={titleId}>{title}</h1>
+          <h1 class="ca-page-shell__title ca-sr-only--shell" class:ca-page-shell__title--display={display} id={titleId}>{title}</h1>
         {/if}
         {#if description}
           <p class="ca-page-shell__description">{description}</p>
@@ -93,6 +95,12 @@
       color: var(--ca-text-primary);
       margin: 0 0 var(--ca-space-0-5);
       line-height: var(--ca-line-height-tight);
+    }
+
+    .ca-page-shell__title--display {
+      font-size: var(--ca-font-size-display-3);
+      letter-spacing: var(--ca-display-tracking);
+      line-height: var(--ca-display-leading);
     }
 
     .ca-page-shell__description {

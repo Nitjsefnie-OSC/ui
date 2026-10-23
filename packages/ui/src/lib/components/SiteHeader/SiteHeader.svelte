@@ -10,10 +10,12 @@
 
   interface Props {
     trailing?: Snippet;
+    /** Display text role (family, `--ca-display-tracking`) for the current-page crumb. */
+    display?:  boolean;
     class?:    string;
   }
 
-  let { trailing, class: className = '' }: Props = $props();
+  let { trailing, display = false, class: className = '' }: Props = $props();
 
   const shell = getContext<SidebarState>('appshell');
 
@@ -54,7 +56,7 @@
                   <a href={crumb.href}>{crumb.label}</a>
                   <span class="ca-site-header__bc-sep" aria-hidden="true">/</span>
                 {:else}
-                  <span aria-current="page">{crumb.label}</span>
+                  <span aria-current="page" class:ca-site-header__current--display={display}>{crumb.label}</span>
                 {/if}
               </li>
             {/each}
@@ -167,6 +169,10 @@
     .ca-site-header__breadcrumb span[aria-current] {
       color: var(--ca-text-primary);
       font-weight: var(--ca-font-weight-medium);
+    }
+    .ca-site-header__breadcrumb span.ca-site-header__current--display {
+      font-family: var(--ca-font-display);
+      letter-spacing: var(--ca-display-tracking);
     }
     .ca-site-header__bc-sep {
       font-size: var(--ca-font-size-caption);
