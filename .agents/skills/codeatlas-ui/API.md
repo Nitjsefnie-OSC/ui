@@ -154,12 +154,13 @@ Classes: `ca-app-settings` `ca-app-settings__actions` `ca-app-settings__body` `c
 | `resizablePanel?` | `boolean` | `false` | Adds a drag handle (a keyboard-operable separator) on the panel's trailing edge. The width the user picks is kept with `persistPanel`, like the open state, and restored before paint. |
 | `reorder?` | `NavExtras['reorder']` |  | Enables `onReorder` on sections and modules: pass the exported `NavReorder` component. Opt-in so the drag engine is only bundled by apps that reorder. |
 | `itemMenu?` | `NavExtras['itemMenu']` |  | Renders `NavItem.actions` as a "…" menu: pass the exported `NavItemMenu` component. Opt-in so DropdownMenu is only bundled by apps that use per-item menus. |
+| `stageVisible?` | `boolean` | `true` | `false` hides the stage (`visibility: hidden`, `inert`) and tells it to pause, without unmounting it: for a full-page route that covers it. A page can also set `data-ca-stage="hidden"` on `<html>` (what `PageFrame mode="page"` does). |
 | `mainId?` | `string \| null` | `'main'` | `id` given to the content region, the target of the skip link. By default the region is the page's `<main id tabindex="-1">` landmark. Pass `null` when your own `<main id="main" tabindex="-1">` is the target: the region then renders as a plain `div` so the page never gets two landmarks. |
 | `skipLink?` | `boolean` | `true` | Render the "Skip to content" link. Turn it off when the shell is embedded in a page that already has one (a framed demo, a preview), so the page does not get two. |
 
-Snippets: `header`, `brand`, `railBottom`, `mobileHeaderActions`, `mobileTitle`, `children`
+Snippets: `stage` (`Snippet<[{ hidden: boolean }]>`), `header`, `brand`, `railBottom`, `mobileHeaderActions`, `mobileTitle`, `children`
 
-Classes: `ca-main` `ca-panel` `ca-shell` `ca-shell__content` `ca-shell__desktop-header` `ca-shell__mobile-header` `ca-sidebar`
+Classes: `ca-main` `ca-panel` `ca-shell` `ca-shell--stage` `ca-shell__body` `ca-shell__content` `ca-shell__desktop-header` `ca-shell__mobile-header` `ca-shell__stage` `ca-shell__stage--hidden` `ca-sidebar`
 
 ## AudioPlayer
 
@@ -3732,6 +3733,16 @@ Fires 'longpress' custom event after `duration` ms of pointer held.
 
 ```ts
 const longpress: Action<HTMLElement, number, { onlongpress?: (e: CustomEvent) => void; }>
+```
+
+### paintRoot
+
+`import { paintRoot } from "@codeatlasdev/ui/actions"`
+
+Makes the page's `<html>` background (the overscroll area, the iOS/Android toolbar tint) match a NESTED preset. `<html>` owns the page preset through `colorScheme`, so while a public screen wrapped in `data-preset="x"` (or `data-theme-scope`) is mounted, the root would keep painting the page's own surface. The action copies the island's resolved `--ca-surface-base` to `--ca-root-surface` on `<html>` (read by `base.css`) and removes it on destroy, so the preset's color is never duplicated in the app. It follows scheme and preset changes on `<html>`.
+
+```ts
+function paintRoot(node: HTMLElement): { update: () => void; destroy(): void; }
 ```
 
 ### primeKeyboard
