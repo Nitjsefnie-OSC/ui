@@ -55,7 +55,7 @@ id	group	page	title	names	tags	summary
 054	inputs	text-area	Basic		text-area,textarea,placeholder,label,bind-value	Three text areas: empty, with a placeholder, and with initial content.
 055	inputs	text-area	States		text-area,textarea,error,required,readonly,disabled	Six text areas showing description, error, required, read-only, disabled and fixed-size states.
 056	inputs	text-field	Default		text-field,input,label,placeholder,email	Two basic text fields: a full name and an email with type email.
-057	inputs	text-field	With icons		text-field,icon,leading,trailing,password,search,snippet	Search field with a leading icon and a password field with a trailing show/hide button.
+057	inputs	text-field	With icons		text-field,icon,leading,trailing,password,search,snippet	Search field with a leading icon and a revealable password field.
 058	inputs	text-field	States		text-field,error,required,readonly,disabled,size,description	Six text fields showing description, error, required, read-only, disabled and small size.
 059	inputs	theme-toggle	Basic		theme-toggle,dark-mode,theme,appearance,rail	Theme toggle button rendered inside a rail container.
 060	inputs	toggle-group	Single and multiple		toggle-group,single,required,multiple,icon,toolbar,aria-label	Single-select alignment group, a required text filter and a multi-select formatting group.
@@ -316,6 +316,7 @@ id	group	page	title	names	tags	summary
 490	feedback	toast	Dedupe and replace by id		toast,toaster,dedupe,id,replace,notification,count	Two buttons: one fires the same error ten times and shows a single toast with a ×10 badge, the other replaces an uploading toast by id.
 491	display	table	Dense, pinned and grouped	Dense table | Compact table | Tabela densa | Pinned columns	table,simple-table,dense,compact,sticky-columns,group-row,sortable,interactive-row,crm	A dense SimpleTable of leads inside an already framed, horizontally scrolling panel: compact rows, two pinned columns, collapsible stage groups, a sortable Name header and clickable rows.
 492	feedback	toast	Description and action		toast,toaster,action,description,undo,notification	Three buttons that fire a toast with a description, with one inline action, and with both.
+500	inputs	text-field	Password		text-field,password,revealable,show-password,below,required,login,forgot-password	A sign-in pair of TextFields: a required email and a revealable password with a Forgot password link under it, neither showing an asterisk.
 530	layout	app-shell	Labels, search slot, badges and More		app-shell,rail,labels,badge,bottom-nav,overflow,filter-modules,search	An app shell with captions under the rail icons, a search trigger on top of the rail, per-module badges and a More sheet on mobile.
 531	layout	app-shell	Stage		app-shell,stage,map,canvas,persistent,pointer-events,inset	An app shell with a persistent stage behind the pages: mounted once, click-through content, hide and pause.
 600	layout	page-shell	Reading width with an aside		page-shell,aside,width,reading,settings,form,sticky,layout	A PageShell with width="reading" (form column capped at 46rem) and an aside snippet holding a section index, inside a fixed-height frame.
