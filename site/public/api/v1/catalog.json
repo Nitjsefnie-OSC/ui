@@ -1,6 +1,6 @@
 {
 	"version": "4.5.0",
-	"count": 313,
+	"count": 315,
 	"groups": [
 		{
 			"slug": "inputs",
@@ -35,8 +35,8 @@
 		{
 			"slug": "layout",
 			"first": "165",
-			"last": "481",
-			"count": 30
+			"last": "761",
+			"count": 32
 		},
 		{
 			"slug": "charts",
@@ -14154,6 +14154,86 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/app-shell#color-count-actions-and-reorder",
+			"needs": "@codeatlasdev/ui@4.5.0"
+		},
+		{
+			"id": "760",
+			"group": "layout",
+			"page": "theme-island",
+			"variant": "Scoped",
+			"slug": "scoped-block",
+			"title": "Scoped block",
+			"description": "A light ocean island inside the current page.",
+			"summary": "ThemeIsland as a scoped block: a light ocean island inside a dark page.",
+			"use": "A section or card that must use another preset or scheme than the rest of the app, without touching <html>.",
+			"spec": [
+				"`<ThemeIsland preset=\"ocean\" scheme=\"light\"`",
+				"A light block inside the page, nothing mirrored to the document"
+			],
+			"tags": [
+				"theme-island",
+				"preset",
+				"scheme",
+				"light",
+				"dark",
+				"scope"
+			],
+			"shape": "wide",
+			"components": [
+				"Button",
+				"ThemeIsland"
+			],
+			"imports": [
+				{
+					"from": "@codeatlasdev/ui",
+					"names": [
+						"Button",
+						"ThemeIsland"
+					]
+				}
+			],
+			"interactive": true,
+			"demo": "https://ui.codeatlas.com.br/docs/layout/theme-island#scoped-block",
+			"needs": "@codeatlasdev/ui@4.5.0"
+		},
+		{
+			"id": "761",
+			"group": "layout",
+			"page": "theme-island",
+			"variant": "FullPage",
+			"slug": "full-page",
+			"title": "Full page",
+			"description": "Opens a rose, light page over the app and restores the app on close.",
+			"summary": "Full-page ThemeIsland with `document`: html and body take the island's preset and scheme while it is mounted.",
+			"use": "A public landing or auth page with its own preset and scheme inside an app that uses another one.",
+			"spec": [
+				"`<ThemeIsland preset=\"rose\" scheme=\"light\" document>` is the page root",
+				"Closing it restores the app preset and scheme"
+			],
+			"tags": [
+				"theme-island",
+				"document",
+				"full-page",
+				"landing",
+				"overscroll",
+				"ssr"
+			],
+			"shape": "wide",
+			"components": [
+				"Button",
+				"ThemeIsland"
+			],
+			"imports": [
+				{
+					"from": "@codeatlasdev/ui",
+					"names": [
+						"Button",
+						"ThemeIsland"
+					]
+				}
+			],
+			"interactive": true,
+			"demo": "https://ui.codeatlas.com.br/docs/layout/theme-island#full-page",
 			"needs": "@codeatlasdev/ui@4.5.0"
 		}
 	]
