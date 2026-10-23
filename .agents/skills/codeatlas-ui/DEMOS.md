@@ -337,4 +337,6 @@ Every demo has a stable number. Fetch one with `get_demo` (MCP) or https://ui.co
 | 720 | Wrapping chips | inputs/chip-group | ChipGroup |
 | 721 | Required choice with error | inputs/chip-group | Button, ChipGroup |
 | 760 | Leads pipeline | display/kanban | Kanban |
+| 780 | Scoped block | layout/theme-island | Button, ThemeIsland |
+| 781 | Full page | layout/theme-island | Button, ThemeIsland |
 | 800 | Themed map | map/stage | MapControls, MapStage |
