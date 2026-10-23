@@ -1,6 +1,6 @@
 {
 	"version": "4.5.0",
-	"count": 325,
+	"count": 326,
 	"groups": [
 		{
 			"slug": "inputs",
@@ -17,8 +17,8 @@
 		{
 			"slug": "feedback",
 			"first": "080",
-			"last": "641",
-			"count": 33
+			"last": "700",
+			"count": 34
 		},
 		{
 			"slug": "display",
@@ -14663,6 +14663,48 @@
 			],
 			"interactive": false,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/kpi-card#stats-in-a-card",
+			"needs": "@codeatlasdev/ui@4.5.0"
+		},
+		{
+			"id": "700",
+			"group": "feedback",
+			"page": "drawer",
+			"variant": "Chromeless",
+			"slug": "chromeless-full-bleed-on-phones",
+			"title": "Chromeless, full bleed on phones",
+			"description": "chromeless drops the header and the body padding; fullBleedBelow=&quot;sm&quot; makes the panel exactly the viewport on phones. The view owns its header, close button and scroll area.",
+			"summary": "A chromeless drawer for a detail view with its own header, close button and scrolling list; full width and height on phones.",
+			"use": "Side detail panels on desktop that become full-screen panels on phones, where the view owns its header and scroll (no double close button, no 48px page strip).",
+			"spec": [
+				"`<Drawer bind:open chromeless width=\"26rem\" fullBleedBelow=\"sm\" aria-labelledby=\"detail-title\">`",
+				"A column `.detail` with `<header class=\"head\">` holding `<h2 id=\"detail-title\" class=\"name\">Order 1042</h2>` and a ghost small button with `aria-label=\"Close detail\"` that sets `open = false`",
+				"A `.scroll` area with `flex: 1; min-height: 0; overflow-y: auto` listing 24 `Line item` rows"
+			],
+			"tags": [
+				"drawer",
+				"chromeless",
+				"full-bleed",
+				"fullbleedbelow",
+				"detail-panel",
+				"mobile",
+				"scroll"
+			],
+			"shape": "wide",
+			"components": [
+				"Drawer",
+				"Button"
+			],
+			"imports": [
+				{
+					"from": "@codeatlasdev/ui",
+					"names": [
+						"Drawer",
+						"Button"
+					]
+				}
+			],
+			"interactive": true,
+			"demo": "https://ui.codeatlas.com.br/docs/feedback/drawer#chromeless-full-bleed-on-phones",
 			"needs": "@codeatlasdev/ui@4.5.0"
 		},
 		{

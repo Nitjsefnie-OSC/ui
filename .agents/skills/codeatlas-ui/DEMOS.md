@@ -329,4 +329,5 @@ Every demo has a stable number. Fetch one with `get_demo` (MCP) or https://ui.co
 | 640 | Neutral tone | inputs/button | Button, IconButton |
 | 641 | Sizes | feedback/progress | Progress |
 | 642 | Stats in a card | layout/kpi-card | Card, Stat |
+| 700 | Chromeless, full bleed on phones | feedback/drawer | Drawer, Button |
 | 800 | Themed map | map/stage | MapControls, MapStage |
