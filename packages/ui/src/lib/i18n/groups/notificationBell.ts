@@ -7,6 +7,7 @@ export const notificationBell = defineGroup("notificationBell", {
 		markAll: "Mark all read",
 		clear: "Clear",
 		empty: "No notifications",
+		loading: "Loading notifications...",
 	},
 	"pt-BR": {
 		label: (unread) => `Notificações (${unread} ${unread === 1 ? "não lida" : "não lidas"})`,
@@ -14,5 +15,6 @@ export const notificationBell = defineGroup("notificationBell", {
 		markAll: "Marcar todas como lidas",
 		clear: "Limpar",
 		empty: "Nenhuma notificação",
+		loading: "Carregando notificações...",
 	},
 });
