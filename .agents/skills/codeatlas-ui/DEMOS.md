@@ -331,5 +331,7 @@ Every demo has a stable number. Fetch one with `get_demo` (MCP) or https://ui.co
 | 641 | Sizes | feedback/progress | Progress |
 | 642 | Stats in a card | layout/kpi-card | Card, Stat |
 | 700 | Chromeless, full bleed on phones | feedback/drawer | Drawer, Button |
+| 720 | Wrapping chips | inputs/chip-group | ChipGroup |
+| 721 | Required choice with error | inputs/chip-group | Button, ChipGroup |
 | 760 | Leads pipeline | display/kanban | Kanban |
 | 800 | Themed map | map/stage | MapControls, MapStage |

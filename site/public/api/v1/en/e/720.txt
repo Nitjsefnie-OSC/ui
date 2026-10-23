@@ -1,0 +1,28 @@
+<!-- @codeatlasdev/ui demo #720 · MIT License (c) CodeAtlas · https://ui.codeatlas.com.br/docs/inputs/chip-group#wrapping-chips -->
+Element: #720 Wrapping chips (inputs/chip-group)
+What it shows: Single-choice chips for a sales team size: five short options that wrap to two rows on a phone.
+When to use: Choosing one of a few short options (team size, plan length, frequency) where RadioGroup is too tall and SegmentedControl would overflow a 390px screen.
+Spec:
+- `<ChipGroup label="Sales team size" items={sizes} bind:value={size} />`
+- `sizes` has 5 items: `1` Just me, `2-5` 2 to 5, `6-20` 6 to 20, `21-50` 21 to 50, `50+` 50+
+- `bind:value={size}` with initial `$state('2-5')`; the selected chip shows a check icon
+Tags: chip-group, chips, radio, single-choice, wrap, team-size, mobile
+Needs: @codeatlasdev/ui@4.5.0
+Components: ChipGroup
+Live demo: https://ui.codeatlas.com.br/docs/inputs/chip-group#wrapping-chips
+
+<script lang="ts">
+  import { ChipGroup } from '@codeatlasdev/ui';
+
+  let size = $state('2-5');
+
+  const sizes = [
+    { value: '1', label: 'Just me' },
+    { value: '2-5', label: '2 to 5' },
+    { value: '6-20', label: '6 to 20' },
+    { value: '21-50', label: '21 to 50' },
+    { value: '50+', label: '50+' },
+  ];
+</script>
+
+<ChipGroup label="Sales team size" items={sizes} bind:value={size} />
