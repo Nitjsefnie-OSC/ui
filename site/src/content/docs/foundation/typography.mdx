@@ -12,6 +12,8 @@ import HeadingsSrc from "~/demos/foundation/typography/Headings.svelte?raw";
 import Body from "~/demos/foundation/typography/Body.svelte";
 import BodySrc from "~/demos/foundation/typography/Body.svelte?raw";
 
+The fluid `--ca-font-size-display-hero` (`clamp(3.75rem, min(15vw, 21dvh), 13.5rem)`) is the size of a one-screen editorial headline. `--ca-font-mono` starts with `ui-monospace` (SF Mono, Menlo, Consolas) and does not name a font the kit does not load.
+
 Type sizes are `rem` tokens multiplied by `--ca-font-scale`, so they follow the user's browser font size. Fonts are stacks: the defaults name Inter and JetBrains Mono but the kit does not load them, so load them yourself (for example with `@fontsource-variable`) or replace them in your theme. `--ca-font-display` defaults to `--ca-font-sans`.
 
 ```ts

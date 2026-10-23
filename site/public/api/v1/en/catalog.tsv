@@ -312,3 +312,6 @@ id	group	page	title	names	tags	summary
 470	navigation	popover	Close on pick		popover,calendar,bind-open,close,date,overlay	A button showing the chosen date that opens a popover holding a calendar; picking a day closes the popover.
 480	layout	app-shell	Panel width		app-shell,panel-width,resizable,separator,sidebar,navigation	An app shell whose panel starts at 280px for long item names and has a drag handle on its edge.
 481	layout	app-shell	Color, count, actions and reorder		app-shell,nav-item,color,count,actions-menu,reorder,drag-and-drop,sidebar	App shell panel rows with a color dot, a neutral count, a per-row actions menu and drag-to-reorder.
+541	display	highlight	Animated and static		highlight,mark,marker,animated,reduced-motion,editorial	A sentence with one animated marker-pen highlight and one static highlight.
+542	display	strike-through	Strike and rewrite		strike-through,del,rewrite,animated,reduced-motion,editorial,highlight	A rewrite line: one struck-out word with an animated pen line, followed by an animated highlighted replacement.
+543	surfaces	surface	Paper grain		surface,grain,paper,noise,texture,editorial	Three solid Surface tiles: static paper grain, animated paper grain and no grain.

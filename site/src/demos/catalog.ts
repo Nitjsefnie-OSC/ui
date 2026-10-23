@@ -319,6 +319,9 @@ export const CATALOG: readonly DemoEntry[] = [
 	{ id: "470", path: "navigation/popover/CloseOnPick" },
 	{ id: "480", path: "layout/app-shell/ResizablePanel" },
 	{ id: "481", path: "layout/app-shell/ItemExtras" },
+	{ id: "541", path: "display/highlight/Animated" },
+	{ id: "542", path: "display/strike-through/Rewrite" },
+	{ id: "543", path: "surfaces/surface/Grain" },
 ];
 
 /**
