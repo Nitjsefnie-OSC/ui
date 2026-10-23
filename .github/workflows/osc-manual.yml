@@ -1,0 +1,202 @@
+# OSC fork CI wrapper — dispatch with `target_ref` to test any branch.
+# Jobs are copied verbatim from the repository's own .github/workflows/ci.yml
+# PR-path jobs, minus the `changes` path gating so every dispatched ref runs
+# them (checkout pins `ref: inputs.target_ref`; a Provenance step per job
+# echoes the tested ref and the checked-out 40-character SHA).
+# DELIBERATELY EXCLUDED (loud skip, add before a probe that needs them):
+#   - changes (paths-filter): removed on purpose so every dispatched ref runs
+#     the full matrix.
+#   - preview (needs CLOUDFLARE_* secrets and a pull_request event).
+#   - update-snapshots mode and visual's "Commit updated baselines" step:
+#     this wrapper validates only; baseline regeneration is an upstream
+#     maintainers' flow. A visual failure here means real baseline drift.
+#   - The `!inputs.update-snapshots` guards on components/site: dropped, the
+#     wrapper always runs the test suites.
+# This file is intentionally not sent upstream.
+name: OSC manual CI
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_ref:
+        description: 'Git branch, tag, or 40-character commit SHA to validate'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: osc-manual-${{ github.repository }}-${{ inputs.target_ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Validate + build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+          ref: ${{ inputs.target_ref }}
+      - name: Provenance
+        shell: bash
+        run: |
+          echo "tested_target_ref=${{ inputs.target_ref }}"
+          echo "checked-out SHA: $(git rev-parse HEAD)"
+      - name: gitleaks
+        run: |
+          curl -sSfL https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz | tar -xz gitleaks
+          ./gitleaks git --no-banner --redact --config .gitleaks.toml .
+      - uses: ./.github/actions/setup
+        # OG cards are rendered with Chromium at build time.
+        with:
+          browsers: chromium
+      # Builds the package first (phase 0), then types, lint, unit, size.
+      - run: bun run validate
+      - run: bun run --cwd site build
+      - uses: actions/upload-artifact@v7
+        with:
+          name: build
+          retention-days: 3
+          include-hidden-files: true
+          path: |
+            packages/ui/dist/
+            site/dist/
+
+  components:
+    name: Component tests (${{ matrix.shard }}/2)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2]
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+          ref: ${{ inputs.target_ref }}
+      - name: Provenance
+        shell: bash
+        run: |
+          echo "tested_target_ref=${{ inputs.target_ref }}"
+          echo "checked-out SHA: $(git rev-parse HEAD)"
+      - uses: ./.github/actions/setup
+        with:
+          browsers: chromium
+      - run: bun run build:pkg
+      - run: bun run --cwd packages/ui test:browser --shard=${{ matrix.shard }}/2
+      - uses: actions/upload-artifact@v7
+        if: ${{ failure() }}
+        with:
+          name: vitest-traces-${{ matrix.shard }}
+          include-hidden-files: true
+          path: |
+            packages/ui/.vitest/
+            packages/ui/src/**/__traces__/
+
+  site:
+    name: Site ${{ matrix.suite }} (${{ matrix.shard }}/${{ matrix.total }})
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      E2E_PREBUILT: "1"
+    strategy:
+      fail-fast: false
+      matrix:
+        # Playwright splits shards by test count, not cost: the per-route a11y tests (3 axe
+        # passes each) get their own shards so no job collects all of them.
+        include:
+          - { suite: e2e, projects: "--project=desktop --project=mobile --project=iphone", browsers: chromium webkit, shard: 1, total: 2 }
+          - { suite: e2e, projects: "--project=desktop --project=mobile --project=iphone", browsers: chromium webkit, shard: 2, total: 2 }
+          - { suite: a11y, projects: "--project=a11y", browsers: chromium, shard: 1, total: 3 }
+          - { suite: a11y, projects: "--project=a11y", browsers: chromium, shard: 2, total: 3 }
+          - { suite: a11y, projects: "--project=a11y", browsers: chromium, shard: 3, total: 3 }
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+          ref: ${{ inputs.target_ref }}
+      - name: Provenance
+        shell: bash
+        run: |
+          echo "tested_target_ref=${{ inputs.target_ref }}"
+          echo "checked-out SHA: $(git rev-parse HEAD)"
+      # The iphone project runs on WebKit.
+      - uses: ./.github/actions/setup
+        with:
+          browsers: ${{ matrix.browsers }}
+      - uses: actions/download-artifact@v8
+        with:
+          name: build
+      - working-directory: site
+        run: bunx playwright test ${{ matrix.projects }} --shard=${{ matrix.shard }}/${{ matrix.total }}
+      - uses: actions/upload-artifact@v7
+        if: ${{ failure() }}
+        with:
+          name: playwright-${{ matrix.suite }}-${{ matrix.shard }}
+          include-hidden-files: true
+          path: |
+            site/playwright-report/
+            site/test-results/
+
+  visual:
+    name: Visual regression (${{ matrix.suite }})
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    env:
+      E2E_PREBUILT: "1"
+    strategy:
+      fail-fast: false
+      matrix:
+        suite: [components, site]
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+          ref: ${{ inputs.target_ref }}
+      - name: Provenance
+        shell: bash
+        run: |
+          echo "tested_target_ref=${{ inputs.target_ref }}"
+          echo "checked-out SHA: $(git rev-parse HEAD)"
+      - uses: ./.github/actions/setup
+        with:
+          browsers: chromium
+      - uses: actions/download-artifact@v8
+        with:
+          name: build
+      - if: ${{ matrix.suite == 'components' }}
+        run: bun run --cwd packages/ui test:vrt
+      - if: ${{ matrix.suite == 'site' }}
+        working-directory: site
+        run: bunx playwright test --project=visual-desktop --project=visual-mobile
+      - uses: actions/upload-artifact@v7
+        if: ${{ failure() }}
+        with:
+          name: playwright-visual-${{ matrix.suite }}
+          include-hidden-files: true
+          path: |
+            site/playwright-report/
+            site/test-results/
+            packages/ui/.vitest/
+
+  ok:
+    name: CI ok
+    # The single aggregate gate. All wrapper jobs always run (no path filters),
+    # so every need must be a plain success.
+    if: ${{ always() }}
+    needs: [build, components, site, visual]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: All jobs passed
+        run: |
+          echo '${{ toJSON(needs) }}' | jq -e 'to_entries | all(.value.result == "success")'
