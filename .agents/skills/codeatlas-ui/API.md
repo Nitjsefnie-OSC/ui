@@ -198,10 +198,11 @@ AuthCard: authentication form card.
 | `variant?` | `'card' \| 'plain'` | `'card'` | `plain` drops the card width cap and sets `title` at display size, for a left-aligned form (`AuthLayout align="start"`). Default `card`. |
 | `title?` | `string` |  |  |
 | `subtitle?` | `string` |  |  |
+| `display?` | `boolean` | `false` | Display text role for the title: `--ca-display-tracking`, `--ca-display-leading` and the fluid `--ca-font-size-display-3`. |
 
 Snippets: `footer`, `children`
 
-Classes: `ca-auth-card` `ca-auth-card--plain` `ca-auth-card__body` `ca-auth-card__footer` `ca-auth-card__header` `ca-auth-card__subtitle` `ca-auth-card__title`
+Classes: `ca-auth-card` `ca-auth-card--plain` `ca-auth-card__body` `ca-auth-card__footer` `ca-auth-card__header` `ca-auth-card__subtitle` `ca-auth-card__title` `ca-auth-card__title--display`
 
 ## AuthLayout
 
@@ -1114,11 +1115,12 @@ Classes: `ca-dropdown-item--sub-trigger` `ca-dropdown-item__chevron` `ca-dropdow
 | `headingLevel?` | `HeadingLevel` |  | Heading level of the title (2–6). Only the tag changes, never the look. Defaults to 2 inside a `PageShell` (under its `<h1>`), 5 elsewhere. |
 | `variant?` | `'default' \| 'hero'` | `'default'` | 'default' = compact inline empty state. 'hero'    = larger brand-tinted icon tile with glow, bigger title; `actions` stack full-width on mobile (put the primary action first). |
 | `description?` | `string` |  |  |
+| `display?` | `boolean` | `false` | Display text role for the title: `--ca-display-tracking`, `--ca-display-leading` and the fluid `--ca-font-size-display-3`. |
 | `class?` | `string` | `''` |  |
 
 Snippets: `actions`, `children`
 
-Classes: `ca-empty` `ca-empty--hero` `ca-empty__actions` `ca-empty__description` `ca-empty__icon` `ca-empty__title`
+Classes: `ca-empty` `ca-empty--hero` `ca-empty__actions` `ca-empty__description` `ca-empty__icon` `ca-empty__title` `ca-empty__title--display`
 
 ## ErrorPage
 
@@ -1324,6 +1326,20 @@ Snippets: `children`
 Also accepts: `PolymorphicAttributes<T, Pick<LayoutProps, 'columns' \| 'gap' \| 'p' \| 'px' \| 'py' \| 'align'>>`
 
 Classes: `ca-grid`
+
+## Heading
+
+`import { Heading } from "@codeatlasdev/ui"`
+
+| Prop | Type | Default | Notes |
+|---|---|---|---|
+| `level?` | `1 \| 2 \| 3 \| 4 \| 5 \| 6` | `2` | Heading element, 1-6. Only the tag changes: never the look. |
+| `size?` | `Size` |  | Visual size. `display` (alias of `display-1`), `display-2` and `display-3` are the fluid editorial tier. Defaults to the size of the level. |
+| `class?` | `string` | `''` |  |
+
+Snippets: `children`
+
+Classes: `ca-heading` `ca-heading--display` `ca-heading--display-2` `ca-heading--display-3` `ca-heading--h1` `ca-heading--h2` `ca-heading--h3` `ca-heading--h4` `ca-heading--h5` `ca-heading--h6`
 
 ## HeatmapChart
 
@@ -1870,6 +1886,7 @@ Classes: `ca-page-frame` `ca-page-frame__body` `ca-page-frame__footer` `ca-page-
 | Prop | Type | Default | Notes |
 |---|---|---|---|
 | `title?` | `string` |  |  |
+| `display?` | `boolean` | `false` | Display text role for the title: `--ca-display-tracking`, `--ca-display-leading` and the fluid `--ca-font-size-display-3`. |
 | `description?` | `string` |  |  |
 | `gap?` | `number` |  |  |
 | `maxWidth?` | `string` |  |  |
@@ -1879,7 +1896,7 @@ Classes: `ca-page-frame` `ca-page-frame__body` `ca-page-frame__footer` `ca-page-
 
 Snippets: `actions`, `aside`, `children`
 
-Classes: `ca-page-shell` `ca-page-shell__actions` `ca-page-shell__aside` `ca-page-shell__body` `ca-page-shell__description` `ca-page-shell__frame` `ca-page-shell__header` `ca-page-shell__layout` `ca-page-shell__layout--aside` `ca-page-shell__layout--reading` `ca-page-shell__meta` `ca-page-shell__title`
+Classes: `ca-page-shell` `ca-page-shell__actions` `ca-page-shell__aside` `ca-page-shell__body` `ca-page-shell__description` `ca-page-shell__frame` `ca-page-shell__header` `ca-page-shell__layout` `ca-page-shell__layout--aside` `ca-page-shell__layout--reading` `ca-page-shell__meta` `ca-page-shell__title` `ca-page-shell__title--display`
 
 ## Pagination
 
@@ -2346,11 +2363,12 @@ Classes: `ca-table` `ca-table--bare` `ca-table--cards` `ca-table--compact` `ca-t
 
 | Prop | Type | Default | Notes |
 |---|---|---|---|
+| `display?` | `boolean` | `false` | Display text role (family, `--ca-display-tracking`) for the current-page crumb. |
 | `class?` | `string` | `''` |  |
 
 Snippets: `trailing`
 
-Classes: `ca-site-header` `ca-site-header__bc-sep` `ca-site-header__breadcrumb` `ca-site-header__inner` `ca-site-header__left` `ca-site-header__sep` `ca-site-header__toggle` `ca-site-header__trailing`
+Classes: `ca-site-header` `ca-site-header__bc-sep` `ca-site-header__breadcrumb` `ca-site-header__current--display` `ca-site-header__inner` `ca-site-header__left` `ca-site-header__sep` `ca-site-header__toggle` `ca-site-header__trailing`
 
 ## Skeleton
 
@@ -3911,7 +3929,7 @@ Types:
 | `ToastItem` | `interface ToastItem { id: string; message: string; variant: ToastVariant; duration: number; count?: number; description?: string; action?: ToastAction; }` |  |
 | `ToastOptions` | `interface ToastOptions { variant?: ToastVariant; duration?: number; id?: string; description?: string; action?: ToastAction; }` |  |
 | `ToastVariant` | `type ToastVariant = "default" \| "success" \| "error" \| "warning" \| "info";` |  |
-| `TypographyOptions` | `interface TypographyOptions { scale?: number; weights?: Partial<Record<"regular" \| "medium" \| "semibold" \| "bold" \| "heading", number>>; headingTracking?: string; headingCase?: "none" \| "uppercase"; labelTracking?: string; labelCase?: "none" \| "uppercase"; lineHeight?: number; measure?: string; }` |  |
+| `TypographyOptions` | `interface TypographyOptions { scale?: number; weights?: Partial<Record<"regular" \| "medium" \| "semibold" \| "bold" \| "heading", number>>; headingTracking?: string; headingCase?: "none" \| "uppercase"; displayTracking?: string; displayLeading?: number; labelTracking?: string; labelCase?: "none" \| "uppercase"; lineHeight?: number; measure?: string; }` |  |
 | `UseDndOptions` | `interface UseDndOptions { messages?: Partial<DndMessages>; threshold?: number; holdMs?: number; edge?: number; id?: string; }` |  |
 | `UseListStateOptions` | `interface UseListStateOptions<T extends object> { data: T[]; perPage?: number; searchKeys?: (keyof T)[]; idKey?: keyof T; ofLabel?: string; }` | useListState — eliminates boilerplate state management in list/CRUD pages. |
 | `UseListStateReturn` | `interface UseListStateReturn<T> { get search(): string; set search(v: string); readonly filters: Record<string, string>; setFilter(key: string, value: string \| undefined): void; clearFilters(): void; readonly hasFilters: boolean; readonly filtered: T[]; readonly count: string; readonly rows: T[]; get page(): number; set page(v: number); readonly pageCount: number; readonly pageInfo: string; readonly selected: Set<T[keyof T]>; readonly allPageSelected: boolean; toggleAll(): void; toggleRow(id: T[keyof T]): void; clearSelection(): void; }` |  |

@@ -327,6 +327,7 @@ Every demo has a stable number. Fetch one with `get_demo` (MCP) or https://ui.co
 | 502 | In header | navigation/locale-switcher | Button, Card, LocaleSwitcher, SiteHeader |
 | 530 | Labels, search slot, badges and More | layout/app-shell | AppShellLayout, Button, PageShell, Card |
 | 531 | Stage | layout/app-shell | AppShellLayout, Button, Card, PageShell |
+| 540 | Display role | display/heading | Heading |
 | 600 | Reading width with an aside | layout/page-shell | PageShell, Card, TextField, Stack |
 | 601 | Short panel | layout/app-shell | AppShellLayout, PageShell, Card |
 | 610 | Map, split and page | layout/page-frame | PageFrame, Button, TextField, SegmentedControl |
