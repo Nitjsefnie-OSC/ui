@@ -1,6 +1,6 @@
 {
 	"version": "4.5.0",
-	"count": 320,
+	"count": 321,
 	"groups": [
 		{
 			"slug": "inputs",
@@ -61,6 +61,12 @@
 			"first": "256",
 			"last": "386",
 			"count": 39
+		},
+		{
+			"slug": "map",
+			"first": "800",
+			"last": "800",
+			"count": 1
 		}
 	],
 	"elements": [
@@ -14485,6 +14491,50 @@
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/layout/page-frame#map-split-and-page",
 			"needs": "@codeatlasdev/ui@4.5.0"
+		},
+		{
+			"id": "800",
+			"group": "map",
+			"page": "stage",
+			"variant": "ThemedMap",
+			"slug": "themed-map",
+			"title": "Themed map",
+			"description": "An offline basemap per scheme, deck.gl circles in the brand color and glass controls. Toggle the theme: the basemap and the circles change, the map is not recreated.",
+			"summary": "A map stage with an offline light and dark basemap, four deck.gl store circles in the brand color and glass zoom and compass controls.",
+			"use": "A map-first screen whose basemap and data layers must follow the app's light and dark theme.",
+			"spec": [
+				"`<MapStage` with `{styles}`, `{layers}`, `label=\"Store map\"`, `padding={{ top: 24, right: 24, bottom: 24, left: 24 }}` and a `fit` of the southeast Brazil bounds",
+				"`styles` holds a `light` and a `dark` entry, each an inline style with one `background` layer, so the demo needs no tiles or token",
+				"`layers` is a `$derived.by` that calls `mapColors()` and returns a deck.gl `ScatterplotLayer` with `getFillColor: c.brandMuted` and `getLineColor: c.brand`, so it re-themes on scheme or preset change",
+				"`<MapControls />` as the child of `MapStage`",
+				"The stage box is `360px` high with `var(--ca-radius-lg)` corners"
+			],
+			"tags": [
+				"map",
+				"deck.gl",
+				"maplibre",
+				"theme",
+				"dark-mode",
+				"controls"
+			],
+			"shape": "wide",
+			"components": [
+				"MapControls",
+				"MapStage"
+			],
+			"imports": [
+				{
+					"from": "@codeatlasdev/ui/map",
+					"names": [
+						"MapControls",
+						"MapStage",
+						"mapColors"
+					]
+				}
+			],
+			"interactive": true,
+			"demo": "https://ui.codeatlas.com.br/docs/map/stage#themed-map",
+			"needs": "@codeatlasdev/ui@4.5.0 + maplibre-gl"
 		}
 	]
 }
