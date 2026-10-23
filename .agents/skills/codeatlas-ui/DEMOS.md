@@ -327,5 +327,6 @@ Every demo has a stable number. Fetch one with `get_demo` (MCP) or https://ui.co
 | 601 | Short panel | layout/app-shell | AppShellLayout, PageShell, Card |
 | 610 | Map, split and page | layout/page-frame | PageFrame, Button, TextField, SegmentedControl |
 | 640 | Neutral tone | inputs/button | Button, IconButton |
+| 641 | Sizes | feedback/progress | Progress |
 | 642 | Stats in a card | layout/kpi-card | Card, Stat |
 | 800 | Themed map | map/stage | MapControls, MapStage |
