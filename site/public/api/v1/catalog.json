@@ -1,6 +1,6 @@
 {
 	"version": "4.5.0",
-	"count": 315,
+	"count": 317,
 	"groups": [
 		{
 			"slug": "inputs",
@@ -35,8 +35,8 @@
 		{
 			"slug": "layout",
 			"first": "165",
-			"last": "481",
-			"count": 30
+			"last": "601",
+			"count": 32
 		},
 		{
 			"slug": "charts",
@@ -14242,6 +14242,98 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/toast#description-and-action",
+			"needs": "@codeatlasdev/ui@4.5.0"
+		},
+		{
+			"id": "600",
+			"group": "layout",
+			"page": "page-shell",
+			"variant": "AsideReading",
+			"slug": "reading-width-with-an-aside",
+			"title": "Reading width with an aside",
+			"description": "width=&quot;reading&quot; plus an aside snippet holding a section index.",
+			"summary": "A PageShell with width=\"reading\" (form column capped at 46rem) and an aside snippet holding a section index, inside a fixed-height frame.",
+			"use": "Settings and form pages on wide screens that need a readable column plus a companion column (in-page index, summary, help, preview).",
+			"spec": [
+				"Frame is a 420px tall flex column with an inset outline",
+				"`<PageShell title=\"Workspace settings\" description=\"Reading width keeps the form at a comfortable line length.\" width=\"reading\" asideLabel=\"Sections\">`",
+				"`{#snippet aside()}` renders a glass `Card` with a nav (aria-label On this page) of three links: General, Billing, Danger zone",
+				"Body is a `Card material=\"glass\" full title=\"General\"` with a `Stack gap=\"4\"` of two `TextField`s: Name (Acme Inc.) and Slug (acme)"
+			],
+			"tags": [
+				"page-shell",
+				"aside",
+				"width",
+				"reading",
+				"settings",
+				"form",
+				"sticky",
+				"layout"
+			],
+			"shape": "wide",
+			"components": [
+				"PageShell",
+				"Card",
+				"TextField",
+				"Stack"
+			],
+			"imports": [
+				{
+					"from": "@codeatlasdev/ui",
+					"names": [
+						"PageShell",
+						"Card",
+						"TextField",
+						"Stack"
+					]
+				}
+			],
+			"interactive": true,
+			"demo": "https://ui.codeatlas.com.br/docs/layout/page-shell#reading-width-with-an-aside",
+			"needs": "@codeatlasdev/ui@4.5.0"
+		},
+		{
+			"id": "601",
+			"group": "layout",
+			"page": "app-shell",
+			"variant": "ShortPanel",
+			"slug": "short-panel",
+			"title": "Short panel",
+			"description": "collapseShortPanel: a module with two destinations shows only the rail.",
+			"summary": "An app shell with one module of two items and collapseShortPanel: only the rail shows, the page uses the full width.",
+			"use": "Small modules (settings, profile) where a 200px panel would hold two links and leave the rest empty.",
+			"spec": [
+				"`<AppShellLayout {modules} {pathname} collapseShortPanel persistPanel={false} mainId={null} skipLink={false}>` in a 320px tall frame",
+				"One module `id: 'settings'` (Settings icon) with two items: Profile and Billing",
+				"Page is `<PageShell title=\"Profile\" description=\"A two-item module needs no panel: the rail is enough.\">` with a glass `Card` hint"
+			],
+			"tags": [
+				"app-shell",
+				"panel",
+				"collapse",
+				"rail",
+				"sidebar",
+				"navigation"
+			],
+			"shape": "wide",
+			"components": [
+				"AppShellLayout",
+				"PageShell",
+				"Card"
+			],
+			"imports": [
+				{
+					"from": "@codeatlasdev/ui",
+					"names": [
+						"AppShellLayout",
+						"PageShell",
+						"Card",
+						"NavModule"
+					]
+				}
+			],
+			"interactive": true,
+			"demo": "https://ui.codeatlas.com.br/docs/layout/app-shell#short-panel",
 			"needs": "@codeatlasdev/ui@4.5.0"
 		}
 	]
