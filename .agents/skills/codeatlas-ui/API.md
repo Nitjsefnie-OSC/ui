@@ -1500,6 +1500,23 @@ Snippets: `children`, `pending`
 
 Classes: `ca-loading-boundary` `ca-loading-boundary__content`
 
+## LocaleSwitcher
+
+`import { LocaleSwitcher } from "@codeatlasdev/ui"`
+
+| Prop | Type | Default | Notes |
+|---|---|---|---|
+| `options` | `LocaleOption[]` |  | The languages on offer, each named in its own language. |
+| `value?` | `string` |  | `bind:` Current locale (an option `value`). Bindable; it changes only after `onselect` succeeds. |
+| `onselect?` | `(value: string) => void \| Promise<void>` |  | Called with the picked locale. May return a promise: the switcher stays busy until it settles, so the host can save the preference, set the cookie and navigate (`/en/login`) first. If it rejects, `value` keeps its previous value and `onerror` is called. |
+| `onerror?` | `(error: unknown) => void` |  | Called when `onselect` throws or rejects. |
+| `compact?` | `boolean` | `false` | `true` always shows the short code. Default shows the name from 600px and the code below. |
+| `label?` | `string` |  | Accessible name prefix. Default "Language" (localized). |
+| `align?` | `'start' \| 'center' \| 'end'` | `'end'` |  |
+| `class?` | `string` | `''` |  |
+
+Classes: `ca-locale` `ca-locale--compact` `ca-locale__code` `ca-locale__name`
+
 ## MaskedField
 
 `import { MaskedField } from "@codeatlasdev/ui/forms"`
