@@ -200,8 +200,14 @@ function findPropsDecl(sf: ts.SourceFile) {
 	return found;
 }
 
+/** Members of a component's props, and the native attribute type they extend. */
+interface PropsMembers {
+	members: readonly ts.TypeElement[];
+	ext: string | undefined;
+}
+
 /** Members of the `Props` interface/type alias, or of an inline type literal. */
-function resolvePropsType(sf: ts.SourceFile, type: ts.TypeNode | undefined) {
+function resolvePropsType(sf: ts.SourceFile, type: ts.TypeNode | undefined): PropsMembers {
 	let members: readonly ts.TypeElement[] = [];
 	let ext: string | undefined;
 	if (!type) return { members, ext };
@@ -257,7 +263,7 @@ function resolvePropsType(sf: ts.SourceFile, type: ts.TypeNode | undefined) {
  * JSDoc), made optional when a later branch leaves them out or optional, and the attribute sets of
  * every branch are reported as `extends` so a reader sees all the native attributes that pass through.
  */
-function resolveUnion(sf: ts.SourceFile, union: ts.UnionTypeNode) {
+function resolveUnion(sf: ts.SourceFile, union: ts.UnionTypeNode): PropsMembers {
 	const branches = union.types.map((t) => resolvePropsType(sf, t));
 	const named = (m: ts.TypeElement) =>
 		ts.isPropertySignature(m) && m.name ? propName(m.name) : "";
