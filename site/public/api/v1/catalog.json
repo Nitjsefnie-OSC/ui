@@ -1,6 +1,6 @@
 {
 	"version": "4.5.0",
-	"count": 326,
+	"count": 327,
 	"groups": [
 		{
 			"slug": "inputs",
@@ -23,8 +23,8 @@
 		{
 			"slug": "display",
 			"first": "104",
-			"last": "433",
-			"count": 51
+			"last": "491",
+			"count": 52
 		},
 		{
 			"slug": "navigation",
@@ -14246,6 +14246,64 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/feedback/toast#dedupe-and-replace-by-id",
+			"needs": "@codeatlasdev/ui@4.5.0"
+		},
+		{
+			"id": "491",
+			"group": "display",
+			"page": "table",
+			"variant": "Dense",
+			"slug": "dense-pinned-and-grouped",
+			"title": "Dense, pinned and grouped",
+			"description": "",
+			"summary": "A dense SimpleTable of leads inside an already framed, horizontally scrolling panel: compact rows, two pinned columns, collapsible stage groups, a sortable Name header and clickable rows.",
+			"use": "CRM or spreadsheet-like record lists that need many columns and rows: dense rows, pinned checkbox and name columns, grouped sections and keyboard-operable rows.",
+			"spec": [
+				"`<SimpleTable density=\"compact\" frame={false} scroll=\"none\" stickyColumns={2} headerCase=\"sentence\">` inside a caller-owned `overflow-x: auto` panel",
+				"`<TableSortHeader {sort} onsort={cycle}>` renders a sentence-case sortable header whose `sort` is `none`, `asc` or `desc`",
+				"One `<tbody>` per stage with `<TableGroupRow colspan={6} collapsible bind:open={opened[stage]}>` as its first row",
+				"`<TableRow selected={selected === l.id} onactivate=` rows: Tab, Enter/Space and click activate; the checkbox does not",
+				"The first two columns (checkbox, name) stay pinned while the panel scrolls sideways"
+			],
+			"tags": [
+				"table",
+				"simple-table",
+				"dense",
+				"compact",
+				"sticky-columns",
+				"group-row",
+				"sortable",
+				"interactive-row",
+				"crm"
+			],
+			"names": [
+				"Dense table",
+				"Compact table",
+				"Tabela densa",
+				"Pinned columns"
+			],
+			"shape": "wide",
+			"components": [
+				"SimpleTable",
+				"TableRow",
+				"TableGroupRow",
+				"TableSortHeader",
+				"Checkbox"
+			],
+			"imports": [
+				{
+					"from": "@codeatlasdev/ui",
+					"names": [
+						"SimpleTable",
+						"TableRow",
+						"TableGroupRow",
+						"TableSortHeader",
+						"Checkbox"
+					]
+				}
+			],
+			"interactive": false,
+			"demo": "https://ui.codeatlas.com.br/docs/display/table#dense-pinned-and-grouped",
 			"needs": "@codeatlasdev/ui@4.5.0"
 		},
 		{

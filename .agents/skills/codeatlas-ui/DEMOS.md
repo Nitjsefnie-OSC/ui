@@ -320,6 +320,7 @@ Every demo has a stable number. Fetch one with `get_demo` (MCP) or https://ui.co
 | 481 | Color, count, actions and reorder | layout/app-shell | AppShellLayout, DropdownMenuItem, NavItemMenu, NavReorder, PageShell, Card |
 | 482 | Stacked controls | surfaces/card | Card, Checkbox |
 | 490 | Dedupe and replace by id | feedback/toast | Button, Toaster |
+| 491 | Dense, pinned and grouped | display/table | SimpleTable, TableRow, TableGroupRow, TableSortHeader, Checkbox |
 | 492 | Description and action | feedback/toast | Button, Toaster |
 | 530 | Labels, search slot, badges and More | layout/app-shell | AppShellLayout, Button, PageShell, Card |
 | 531 | Stage | layout/app-shell | AppShellLayout, Button, Card, PageShell |
