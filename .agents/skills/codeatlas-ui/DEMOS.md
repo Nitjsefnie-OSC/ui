@@ -323,6 +323,8 @@ Every demo has a stable number. Fetch one with `get_demo` (MCP) or https://ui.co
 | 491 | Dense, pinned and grouped | display/table | SimpleTable, TableRow, TableGroupRow, TableSortHeader, Checkbox |
 | 492 | Description and action | feedback/toast | Button, Toaster |
 | 500 | Password | inputs/text-field | TextField |
+| 501 | Basic | navigation/locale-switcher | LocaleSwitcher |
+| 502 | In header | navigation/locale-switcher | Button, Card, LocaleSwitcher, SiteHeader |
 | 530 | Labels, search slot, badges and More | layout/app-shell | AppShellLayout, Button, PageShell, Card |
 | 531 | Stage | layout/app-shell | AppShellLayout, Button, Card, PageShell |
 | 600 | Reading width with an aside | layout/page-shell | PageShell, Card, TextField, Stack |

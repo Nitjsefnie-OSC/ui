@@ -1,6 +1,6 @@
 {
 	"version": "4.5.0",
-	"count": 331,
+	"count": 333,
 	"groups": [
 		{
 			"slug": "inputs",
@@ -29,8 +29,8 @@
 		{
 			"slug": "navigation",
 			"first": "146",
-			"last": "470",
-			"count": 29
+			"last": "502",
+			"count": 31
 		},
 		{
 			"slug": "layout",
@@ -14388,6 +14388,92 @@
 			],
 			"interactive": true,
 			"demo": "https://ui.codeatlas.com.br/docs/inputs/text-field#password",
+			"needs": "@codeatlasdev/ui@4.5.0"
+		},
+		{
+			"id": "501",
+			"group": "navigation",
+			"page": "locale-switcher",
+			"variant": "Basic",
+			"slug": "basic",
+			"title": "Basic",
+			"description": "Native names, a short code on narrow screens and an async onselect that keeps the switcher busy.",
+			"summary": "A language switcher with three options named in their own language; picking one awaits an async onselect before the value changes.",
+			"use": "A language selector in a public header or settings: persist the choice, set the cookie and navigate to the localized URL, with the control busy meanwhile.",
+			"spec": [
+				"`<LocaleSwitcher {options} bind:value={locale} {onselect} />` with `options` of `pt-BR` (label `Português`, `short: 'PT'`), `en` (`English`) and `es` (`Español`)",
+				"`async function onselect(next: string)` waits 600 ms, then writes a visible `saved` note: Saved <locale>; the app would now go to /<locale>/login.",
+				"Before any pick the note reads `Pick a language: the switcher stays busy until onselect resolves.`",
+				"The column is left-aligned with `gap: var(--ca-space-3)`"
+			],
+			"tags": [
+				"locale-switcher",
+				"language",
+				"i18n",
+				"dropdown",
+				"async",
+				"onselect"
+			],
+			"shape": "wide",
+			"components": [
+				"LocaleSwitcher"
+			],
+			"imports": [
+				{
+					"from": "@codeatlasdev/ui",
+					"names": [
+						"LocaleSwitcher"
+					]
+				}
+			],
+			"interactive": true,
+			"demo": "https://ui.codeatlas.com.br/docs/navigation/locale-switcher#basic",
+			"needs": "@codeatlasdev/ui@4.5.0"
+		},
+		{
+			"id": "502",
+			"group": "navigation",
+			"page": "locale-switcher",
+			"variant": "InHeader",
+			"slug": "in-header",
+			"title": "In header",
+			"description": "The SiteHeader trailing slot holds the switcher and a Sign up button.",
+			"summary": "A site header whose trailing end holds a LocaleSwitcher next to a filled Sign up button.",
+			"use": "The public header of a multi-language product: language switcher plus the primary call to action, compact on a phone.",
+			"spec": [
+				"`<SiteHeader>` with a `{#snippet trailing()}` holding the end of the bar",
+				"`<LocaleSwitcher {options} bind:value={locale} />` with `pt-BR` (`Português`, `short: 'PT'`) and `en` (`English`)",
+				"A small filled `Button` labelled `Sign up` follows the switcher",
+				"The header sits in `<Card material=\"glass\" full flush>`"
+			],
+			"tags": [
+				"locale-switcher",
+				"site-header",
+				"trailing",
+				"cta",
+				"language",
+				"header"
+			],
+			"shape": "wide",
+			"components": [
+				"Button",
+				"Card",
+				"LocaleSwitcher",
+				"SiteHeader"
+			],
+			"imports": [
+				{
+					"from": "@codeatlasdev/ui",
+					"names": [
+						"Button",
+						"Card",
+						"LocaleSwitcher",
+						"SiteHeader"
+					]
+				}
+			],
+			"interactive": true,
+			"demo": "https://ui.codeatlas.com.br/docs/navigation/locale-switcher#in-header",
 			"needs": "@codeatlasdev/ui@4.5.0"
 		},
 		{
