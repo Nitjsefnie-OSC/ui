@@ -55,7 +55,7 @@ id	group	page	title	names	tags	summary
 054	inputs	text-area	Basic		text-area,textarea,placeholder,label,bind-value	Three text areas: empty, with a placeholder, and with initial content.
 055	inputs	text-area	States		text-area,textarea,error,required,readonly,disabled	Six text areas showing description, error, required, read-only, disabled and fixed-size states.
 056	inputs	text-field	Default		text-field,input,label,placeholder,email	Two basic text fields: a full name and an email with type email.
-057	inputs	text-field	With icons		text-field,icon,leading,trailing,password,search,snippet	Search field with a leading icon and a password field with a trailing show/hide button.
+057	inputs	text-field	With icons		text-field,icon,leading,trailing,password,search,snippet	Search field with a leading icon and a revealable password field.
 058	inputs	text-field	States		text-field,error,required,readonly,disabled,size,description	Six text fields showing description, error, required, read-only, disabled and small size.
 059	inputs	theme-toggle	Basic		theme-toggle,dark-mode,theme,appearance,rail	Theme toggle button rendered inside a rail container.
 060	inputs	toggle-group	Single and multiple		toggle-group,single,required,multiple,icon,toolbar,aria-label	Single-select alignment group, a required text filter and a multi-select formatting group.
@@ -312,3 +312,4 @@ id	group	page	title	names	tags	summary
 470	navigation	popover	Close on pick		popover,calendar,bind-open,close,date,overlay	A button showing the chosen date that opens a popover holding a calendar; picking a day closes the popover.
 480	layout	app-shell	Panel width		app-shell,panel-width,resizable,separator,sidebar,navigation	An app shell whose panel starts at 280px for long item names and has a drag handle on its edge.
 481	layout	app-shell	Color, count, actions and reorder		app-shell,nav-item,color,count,actions-menu,reorder,drag-and-drop,sidebar	App shell panel rows with a color dot, a neutral count, a per-row actions menu and drag-to-reorder.
+500	inputs	text-field	Password		text-field,password,revealable,show-password,below,required,login,forgot-password	A sign-in pair of TextFields: a required email and a revealable password with a Forgot password link under it, neither showing an asterisk.
